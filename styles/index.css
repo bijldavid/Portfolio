@@ -1,17 +1,17 @@
 /* banner css */
 
-main > div:nth-of-type(1) {
+main>div:nth-of-type(1) {
     position: relative;
     background-color: var(--color-background2);
 }
 
-main > div:nth-of-type(1) section {
+main>div:nth-of-type(1) section {
     position: absolute;
     bottom: 1.5em;
     padding: 0 0 0 1.5em;
 }
 
-main > div:nth-of-type(1) section h1 {
+main>div:nth-of-type(1) section h1 {
     font-family: "komet", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -20,7 +20,7 @@ main > div:nth-of-type(1) section h1 {
     color: var(--color-htext1);
 }
 
-main > div:nth-of-type(1) section h2 {
+main>div:nth-of-type(1) section h2 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -31,16 +31,85 @@ main > div:nth-of-type(1) section h2 {
     padding: .5em 0 0 0;
 }
 
-main > div:nth-of-type(1) img {
+main>div:nth-of-type(1) img {
     margin-top: -70px;
     height: auto;
     width: 100%;
-    display: block; /* Ensure the image behaves like a block element */
-} 
+    display: block;
+}
 
 
 /* my work */
 
-.background {
+.main2 {
     background-color: var(--color-background1);
+}
+
+
+.main2 h2 {
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
+    color: var(--color-htext2);
+    padding: 2.5em 1em 0;
+}
+
+.main2 .line {
+    border: none;
+    height: 2px;
+    background-color: var(--color-line);
+    margin: 10px 1.5em 20px;
+}
+
+.main2 ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em;
+}
+
+.main2 ul li h3:nth-of-type(1) {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .8em;
+    color: var(--color-alttext);
+    padding-top: 20px;
+}
+
+.main2 ul li h3:nth-of-type(2) {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .8em;
+    color: var(--color-htext2);
+    padding-top: 8px;
+}
+
+.main2 ul li p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .7em;
+    color: var(--color-broodtext);
+    padding-top: 8px;
+}
+
+.main2 ul li a {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .8em;
+    color: var(--color-htext2);
+    border: solid;
+    padding: .7em 0;
+    margin: 2.5em 0 4em;
+    display: block;
+    text-align: center;
+}
+
+.main2 ul li img {
+    width: 100%;
+    height: auto;
+    order: -1;
 }

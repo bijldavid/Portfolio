@@ -16,11 +16,13 @@
     /* -----text------ */
     --color-htext1: #66E512;
     --color-htext2: #B8F3FF;
-    --color-brooddtext: #8AC6D0;
+    --color-broodtext: #8AC6D0;
+    --color-alttext: #204E4B;
 
     /* -----backgrounds------ */
     --color-background1: #0A2A2F;
     --color-background2: #071E22;
+    --color-line: #1B393E;
 
     --color-hover: rgb(56, 69, 210);
 }
