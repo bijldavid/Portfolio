@@ -1,0 +1,46 @@
+/* banner css */
+
+main > div:nth-of-type(1) {
+    position: relative;
+    background-color: var(--color-background2);
+}
+
+main > div:nth-of-type(1) section {
+    position: absolute;
+    bottom: 2em;
+    padding: 0 0 0 1.5em;
+}
+
+main > div:nth-of-type(1) section h1 {
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 1em;
+    color: var(--color-htext1);
+}
+
+main > div:nth-of-type(1) section h2 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.25em;
+    color: var(--color-htext1);
+    max-width: 15em;
+    padding: .5em 0 0 0;
+}
+
+main > div:nth-of-type(1) img {
+    margin-top: -70px;
+    height: auto;
+    width: 100%;
+    display: block; /* Ensure the image behaves like a block element */
+} 
+
+
+/* my work */
+
+.background {
+    background-color: var(--color-background1);
+}

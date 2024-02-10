@@ -1,0 +1,138 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+    /* -----text------ */
+    --color-htext1: #66E512;
+    --color-htext2: #B8F3FF;
+    --color-brooddtext: #8AC6D0;
+
+    /* -----backgrounds------ */
+    --color-background1: #0A2A2F;
+    --color-background2: #071E22;
+
+    --color-hover: rgb(56, 69, 210);
+}
+
+
+/***************/
+/* GENERAL CSS */
+/***************/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* utility classes */
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.visually-gone {
+    display: none;
+}
+
+body.scroll-lock {
+    overflow: hidden;
+}
+
+/**************/
+/* HEADER CSS */
+/**************/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+}
+
+header a {
+    z-index: 100;
+    position: relative;
+}
+
+header a p {
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
+    color: var(--color-htext2);
+}
+
+header button {
+	background-image: url("../images/menu-icon.png");
+    background-repeat: no-repeat;
+    z-index: 100;
+    border: none;
+    background-color: transparent;
+    padding: 10px 11px;
+    margin: 4px 0;
+}
+
+header nav {
+    background-color: var(--color-background2);
+    position: fixed;
+    inset: 0;
+    translate: 100% 0;
+    transition: .5s;
+    z-index: 99;
+}
+
+header nav.open {
+    translate: 0 0;
+}
+
+header nav ul {
+    text-align: right;
+    position: fixed;
+    right: 1.5em;
+    bottom: 6.5em;
+}
+
+header nav a {
+	text-decoration:none;
+	color: var(--color-navtext);
+    font-size: 1.18em;
+    line-height: 2.6;
+	font-weight: 200;
+}
