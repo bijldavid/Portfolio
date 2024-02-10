@@ -15,7 +15,7 @@ main > div:nth-of-type(1) section h1 {
     font-family: "komet", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2.8em;
     line-height: 1em;
     color: var(--color-htext1);
 }
