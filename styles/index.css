@@ -17,7 +17,7 @@ main>div:nth-of-type(1) section h1 {
     font-style: normal;
     font-size: 2.6em;
     line-height: 1em;
-    color: var(--color-htext1);
+    color: var(--color-htext2);
 }
 
 main>div:nth-of-type(1) section h2 {
@@ -26,7 +26,7 @@ main>div:nth-of-type(1) section h2 {
     font-style: normal;
     font-size: 1em;
     line-height: 1.25em;
-    color: var(--color-htext1);
+    color: var(--color-broodtext);
     max-width: 15em;
     padding: .5em 0 0 0;
 }
@@ -62,13 +62,13 @@ main>div:nth-of-type(1) img {
     margin: 10px 1.5em 20px;
 }
 
-.main2 ul li {
+.main2 > ul:nth-of-type(1) li {
     display: flex;
     flex-direction: column;
     padding: 0 1.5em;
 }
 
-.main2 ul li h3:nth-of-type(1) {
+.main2 > ul:nth-of-type(1) li h3:nth-of-type(1) {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -77,7 +77,7 @@ main>div:nth-of-type(1) img {
     padding-top: 20px;
 }
 
-.main2 ul li h3:nth-of-type(2) {
+.main2 > ul:nth-of-type(1) li h3:nth-of-type(2) {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -86,7 +86,7 @@ main>div:nth-of-type(1) img {
     padding-top: 8px;
 }
 
-.main2 ul li p {
+.main2 > ul:nth-of-type(1) li p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -95,7 +95,7 @@ main>div:nth-of-type(1) img {
     padding-top: 8px;
 }
 
-.main2 ul li a {
+.main2 > ul:nth-of-type(1) li a {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -108,8 +108,30 @@ main>div:nth-of-type(1) img {
     text-align: center;
 }
 
-.main2 ul li img {
+.main2 > ul:nth-of-type(1) li img {
     width: 100%;
     height: auto;
     order: -1;
+}
+
+/* infinite slider */
+
+.main2 section:nth-of-type(1) ul {
+    display: flex;
+    overflow: hidden;
+    background-color: var(--color-htext1);
+}
+
+.main2 section:nth-of-type(1) ul li {
+    width: fit-content;
+    height: auto;
+}
+
+.main2 section:nth-of-type(1) ul li p {
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1em;
+    color: var(--color-background1);
+    white-space: nowrap;
 }
