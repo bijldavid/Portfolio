@@ -84,6 +84,10 @@ body.scroll-lock {
     overflow: hidden;
 }
 
+.contact-line {
+    display: block;
+}
+
 /**************/
 /* HEADER CSS */
 /**************/

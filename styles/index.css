@@ -198,3 +198,60 @@ main>div:nth-of-type(1) img {
     width: 100%;
     height: auto;
 }
+
+
+/* contact */
+
+.contact {
+    padding: 1.5em;
+}
+
+.contact > div {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    background-color: var(--color-background2);
+  }
+
+.contact h2 {
+    padding-top: 0;
+}
+
+.contact h3 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .8em;
+    color: var(--color-htext2);
+    padding-top: 8px;
+}
+
+.contact div .hallo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact div .hallo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .8em;
+    color: var(--color-broodtext);
+    border: solid var(--color-broodtext) 2px;
+    width: 140px;
+    height: 40px;
+    gap: 10px;
+}
+
+.contact div div a:nth-of-type(1) img {
+    height: 17px;
+    width: auto;
+}
+
+.contact div div a:nth-of-type(2) img {
+    height: 20px;
+    width: auto;
+}
