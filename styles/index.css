@@ -209,7 +209,7 @@ main>div:nth-of-type(1) img {
 .contact > div {
     display: flex;
     flex-direction: column;
-    padding: 1.5em;
+    padding: 1.5em 1.5em 5em 1.5em;
     background-color: var(--color-background2);
   }
 
@@ -247,7 +247,7 @@ main>div:nth-of-type(1) img {
 }
 
 .contact div div a:nth-of-type(1) img {
-    height: 17px;
+    height: 15px;
     width: auto;
 }
 
