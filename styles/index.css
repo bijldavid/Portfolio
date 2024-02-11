@@ -163,6 +163,7 @@ main>div:nth-of-type(1) img {
 .about-me section {
     position: absolute;
     padding: 0 1.5em;
+    z-index: 101;
 }
 
 .about-me section h2 {
