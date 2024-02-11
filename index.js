@@ -11,7 +11,7 @@ function toggleMenu() {
   body.classList.toggle("scroll-lock"); // Add or remove the scroll-lock class
 }
 
-const scrollers = document.querySelectorAll(".main2 section:nth-of-type(1)");
+const scrollers = document.querySelectorAll(".scroller");
 
 // Call the addAnimation function to start the animation
 addAnimation();
@@ -19,7 +19,7 @@ addAnimation();
 function addAnimation() {
   scrollers.forEach((scroller) => {
 
-    const scrollerInner = scroller.querySelector(".main2 section:nth-of-type(1) ul");
+    const scrollerInner = scroller.querySelector(".scroller ul");
     const scrollerContent = Array.from(scrollerInner.children);
 
     scrollerContent.forEach((item) => {
