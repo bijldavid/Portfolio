@@ -44,6 +44,15 @@ p {
     margin: 0;
 }
 
+h2 {
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
+    color: var(--color-htext2);
+    padding: 2.5em 0 0;
+}
+
 ul {
     padding: 0;
     margin: 0;
