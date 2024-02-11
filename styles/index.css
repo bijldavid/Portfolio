@@ -163,7 +163,7 @@ main>div:nth-of-type(1) img {
 .about-me section {
     position: absolute;
     padding: 0 1.5em;
-    z-index: 101;
+    z-index: 110;
 }
 
 .about-me section h2 {
@@ -207,12 +207,16 @@ main>div:nth-of-type(1) img {
     padding: 1.5em;
 }
 
-.contact > div {
+.contact>div {
     display: flex;
     flex-direction: column;
     padding: 1.5em 1.5em 5em 1.5em;
     background-color: var(--color-background2);
-  }
+}
+
+.contact div>img:nth-of-type(1) {
+    padding-bottom: 1em;
+}
 
 .contact h2 {
     padding-top: 0;

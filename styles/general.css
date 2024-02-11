@@ -96,14 +96,14 @@ body.scroll-lock {
 header {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 130;
     display: flex;
     justify-content: space-between;
     padding: 1em 1.5em;
 }
 
 header a {
-    z-index: 100;
+    z-index: 130;
     position: relative;
 }
 
@@ -118,7 +118,7 @@ header a p {
 header button {
 	background-image: url("../images/menu-icon.png");
     background-repeat: no-repeat;
-    z-index: 100;
+    z-index: 130;
     border: none;
     background-color: transparent;
     padding: 10px 11px;
@@ -131,7 +131,7 @@ header nav {
     inset: 0;
     translate: 100% 0;
     transition: .5s;
-    z-index: 99;
+    z-index: 120;
 }
 
 header nav.open {
