@@ -22,7 +22,7 @@ main {
 
 .tonik-float section {
     background-color: var(--color-background1);
-    padding: 1.5em;
+    padding: 1.5em 1.5em 3em;
 }
 
 .tonik-float section h1 {
@@ -50,7 +50,13 @@ main {
     color: var(--color-broodtext);
 }
 
-.red {
-    background-color: red;
-    padding: 1.5em;
+/* red section */
+
+main > section {
+    background-color: var(--color-background-tonik);
+    padding: 12em 1.5em 0;
+}
+
+main > section h2 {
+    color: white;
 }
