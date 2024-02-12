@@ -1,19 +1,27 @@
-var menuButton = document.querySelector("header button");
+var menuButton = document.querySelector("header .hamburger");
 var navMenu = document.querySelector("nav");
 var deHeader = document.querySelector("header");
 var body = document.body;
 
-menuButton.onclick = toggleMenu;
+
+document.getElementById('hamburger-toggle')
+.addEventListener('click', function(){
+  document.body.classList.toggle('nav-open');
+});
 
 function toggleMenu() {
   navMenu.classList.toggle("open");
   deHeader.classList.toggle("open");
-  body.classList.toggle("scroll-lock"); // Add or remove the scroll-lock class
+  body.classList.toggle("scroll-lock"); // scroll-lock
 }
+
+menuButton.onclick = toggleMenu;
+
+
+// SCROLLER
 
 const scrollers = document.querySelectorAll(".scroller");
 
-// Call the addAnimation function to start the animation
 addAnimation();
 
 function addAnimation() {

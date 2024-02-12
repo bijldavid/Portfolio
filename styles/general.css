@@ -25,6 +25,9 @@
     --color-background2: #071E22;
     --color-line: #1B393E;
 
+    /* -----fill------ */
+    --color-fill1: #B8F3FF;
+
     --color-hover: rgb(56, 69, 210);
 }
 
@@ -115,16 +118,6 @@ header a p {
     color: var(--color-htext2);
 }
 
-header button {
-	background-image: url("../images/menu-icon.png");
-    background-repeat: no-repeat;
-    z-index: 130;
-    border: none;
-    background-color: transparent;
-    padding: 10px 11px;
-    margin: 4px 0;
-}
-
 header nav {
     background-color: var(--color-background2);
     position: fixed;
@@ -150,14 +143,66 @@ header nav ul li {
 }
 
 header nav a {
-	text-decoration:none;
-	color: var(--color-navtext);
+    text-decoration: none;
+    color: var(--color-navtext);
     font-size: 1.3em;
     line-height: 2.6;
     font-family: "century-gothic", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: var(--color-htext2);
+    color: var(--color-fill1);
+}
+
+.hamburger {
+    position: relative;
+}
+
+.hamburger-toggle {
+    position: absolute;
+    right: 0;
+    top: 49%;
+    transform: translate(0, -50%);
+    height: 26px;
+    width: 29px;
+    color: var(--color-fill1);
+}
+
+.hamburger-toggle:hover {
+    color: var(--color-fill1);
+}
+
+.hamburger-toggle-bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-fill1);
+    transition: all 0.3s ease;
+}
+
+.hamburger-toggle-bar--top {
+    transform: translate(0, -8px);
+}
+
+.hamburger-toggle-bar--middle {}
+
+.hamburger-toggle-bar--bottom {
+    transform: translate(0, 8px);
+}
+
+.nav-open .hamburger-toggle-bar--top {
+    transform: translate(0, 0) rotate(45deg);
+}
+
+.nav-open .hamburger-toggle-bar--middle {
+    opacity: 0;
+}
+
+.nav-open .hamburger-toggle-bar--bottom {
+    transform: translate(0, 0) rotate(-45deg);
 }
 
 /**************/
