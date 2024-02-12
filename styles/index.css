@@ -39,7 +39,9 @@ main>div:nth-of-type(1) img {
 }
 
 
-/* my work */
+/* ======= */
+/* MY WORK */
+/* ======= */
 
 .main2 {
     background-color: var(--color-background1);
@@ -47,14 +49,11 @@ main>div:nth-of-type(1) img {
 
 
 .main2>h2 {
-    padding-left: 1em;
+    padding: 2.5em 1em 0;
 }
 
-.main2 .line {
-    border: none;
-    height: 2px;
-    background-color: var(--color-line);
-    margin: 10px 1.5em 20px;
+.main2 > .line {
+    margin: .5em 1.5em 1.3em;
 }
 
 .main2>ul:nth-of-type(1) li {
@@ -67,7 +66,7 @@ main>div:nth-of-type(1) img {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: .8em;
+    font-size: .85em;
     color: var(--color-alttext);
     padding-top: 20px;
 }
@@ -76,7 +75,7 @@ main>div:nth-of-type(1) img {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: .8em;
+    font-size: .85em;
     color: var(--color-htext2);
     padding-top: 8px;
 }
@@ -85,7 +84,7 @@ main>div:nth-of-type(1) img {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: .7em;
+    font-size: .75em;
     color: var(--color-broodtext);
     padding-top: 8px;
 }
@@ -94,11 +93,11 @@ main>div:nth-of-type(1) img {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: .8em;
+    font-size: .85em;
     color: var(--color-htext2);
     border: solid;
     padding: .7em 0;
-    margin: 2.5em 0 4em;
+    margin: 2em 0 5em;
     display: block;
     text-align: center;
 }
@@ -109,7 +108,10 @@ main>div:nth-of-type(1) img {
     order: -1;
 }
 
-/* infinite slider */
+
+/* =============== */
+/* INFINITE SLIDER */
+/* =============== */
 
 .scroller {
     max-width: 100%;
@@ -153,7 +155,9 @@ main>div:nth-of-type(1) img {
 }
 
 
-/* about me */
+/* ======== */
+/* ABOUT ME */
+/* ======== */
 
 .about-me {
     background-color: var(--color-background2);
@@ -167,14 +171,14 @@ main>div:nth-of-type(1) img {
 }
 
 .about-me section h2 {
-    padding-left: 0;
+    padding: 2.5em 0 0;
 }
 
 .about-me section h3 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: .8em;
+    font-size: .85em;
     color: var(--color-htext2);
     padding-top: 8px;
 }
@@ -183,7 +187,7 @@ main>div:nth-of-type(1) img {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: .7em;
+    font-size: .75em;
     color: var(--color-broodtext);
     padding-top: 8px;
 }
@@ -201,7 +205,9 @@ main>div:nth-of-type(1) img {
 }
 
 
-/* contact */
+/* ======= */
+/* CONTACT */
+/* ======= */
 
 .contact {
     padding: 1.5em;
@@ -210,6 +216,7 @@ main>div:nth-of-type(1) img {
 .contact>div {
     display: flex;
     flex-direction: column;
+    text-align: center;
     padding: 1.5em 1.5em 5em 1.5em;
     background-color: var(--color-background2);
 }
@@ -226,24 +233,24 @@ main>div:nth-of-type(1) img {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: .8em;
+    font-size: .85em;
     color: var(--color-htext2);
     padding-top: 8px;
 }
 
-.contact div .hallo {
+.contact div .contact-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.contact div .hallo a {
+.contact div .contact-buttons a {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: .8em;
+    font-size: .85em;
     color: var(--color-broodtext);
     border: solid var(--color-broodtext) 2px;
     width: 140px;

@@ -1,0 +1,56 @@
+main {
+    background-color: var(--color-background2);
+}
+
+.con {
+    position: relative;
+}
+
+.con > img {
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+    display: block;
+}
+
+.tonik-float {
+    position: absolute;
+    width: 100%;
+    bottom: -10em;
+    padding: 1.5em;
+}
+
+.tonik-float section {
+    background-color: var(--color-background1);
+    padding: 1.5em;
+}
+
+.tonik-float section h1 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+    color: var(--color-alttext);
+}
+
+.tonik-float section h3 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .85em;
+    color: var(--color-htext2);
+    padding: 1.5em 0 .5em;
+}
+
+.tonik-float section p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: var(--color-broodtext);
+}
+
+.red {
+    background-color: red;
+    padding: 1.5em;
+}
