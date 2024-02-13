@@ -1,3 +1,9 @@
+.line {
+    margin: 0 1.5em;
+}
+
+/* yap yap */
+
 main {
     background-color: var(--color-background2);
 }
@@ -50,13 +56,176 @@ main {
     color: var(--color-broodtext);
 }
 
-/* red section */
 
-main > section {
+/* CONCEPT */
+
+.timeline section:nth-of-type(1) {
     background-color: var(--color-background-tonik);
-    padding: 12em 1.5em 0;
+    padding: 14em 1.5em 0;
 }
 
-main > section h2 {
+.timeline section:nth-of-type(1) h2 {
     color: white;
+}
+
+.timeline section:nth-of-type(1) p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: white;
+    padding: .5em 0 0;
+}
+
+.timeline section:nth-of-type(1) div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    gap: 1em;
+    padding: 2em 2em 4em;
+    margin-left: -30px;
+}
+
+.timeline section:nth-of-type(1) div img:nth-of-type(1) {
+    width: auto;
+    height: 15em;
+    display: block;
+}
+
+.timeline section:nth-of-type(1) div img:nth-of-type(2) {
+    width: auto;
+    height: 12em;
+    display: block;
+}
+
+
+/* USER JOURNEY */
+
+.timeline section:nth-of-type(2) {
+    padding: 4em 1.5em 2em;
+}
+
+.timeline section:nth-of-type(2) img {
+    width: 100%;
+    display: block;
+    margin-top: 1em;
+    border-radius: .5em;
+}
+
+
+/* USER REQUIREMENTS */
+
+.timeline section:nth-of-type(3) {
+    padding: 2em 1.5em 2em;
+}
+
+.timeline section:nth-of-type(3) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.timeline section:nth-of-type(3) > div div {
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.timeline section:nth-of-type(3) > div div h3 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .85em;
+    color: var(--color-htext2);
+    padding-bottom: .2em;
+}
+
+.timeline section:nth-of-type(3) > div div p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: var(--color-broodtext);
+}
+
+
+.timeline section:nth-of-type(3) > div div:nth-of-type(1),
+.timeline section:nth-of-type(3) > div div:nth-of-type(2),
+.timeline section:nth-of-type(3) > div div:nth-of-type(3) {
+    background-color: #0A2A2F;
+}
+
+.timeline section:nth-of-type(3) > div div:nth-of-type(4) {
+    background-color: #082428;
+}
+
+.timeline section:nth-of-type(3) > div div:nth-of-type(5) {
+    background-color: #072125;
+}
+
+
+/* WIREFRAMES + WIREFLOW */
+
+.timeline section:nth-of-type(4) {
+    padding: 2em 1.5em 2em;
+}
+
+.timeline section:nth-of-type(4) h2 {
+    padding-bottom: .3em;
+}
+
+.timeline section:nth-of-type(4) p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: var(--color-broodtext);
+}
+
+.timeline section:nth-of-type(4) img {
+    width: 100%;
+    height: auto;
+    padding: 1.5em 0;
+}
+
+
+/* FINAL PRODUCT */
+
+.timeline > img:nth-of-type(1) {
+    width: 100%;
+    height: auto;
+}
+
+.timeline section:nth-of-type(5) {
+    padding: 2em 1.5em 2em;
+    margin-top: -100px;
+}
+
+.timeline section:nth-of-type(5) p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: var(--color-broodtext);
+    padding: .5em 0 2em;
+}
+
+
+/* MOCKUPS */
+
+.timeline > img:nth-of-type(2) {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.timeline > div {
+    display: flex;
+}
+
+.timeline > div img {
+    width: 50%;
+    height: auto;
+    display: block;
 }
