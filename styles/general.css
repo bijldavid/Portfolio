@@ -53,7 +53,8 @@ font-size: .85em;
     /* -----fill------ */
     --color-fill1: #B8F3FF;
 
-    --color-hover: rgb(56, 69, 210);
+    /* -----animation----- */
+
 }
 
 
@@ -125,6 +126,12 @@ body.scroll-lock {
 
 .contact-line {
     display: block;
+}
+
+@keyframes parallax {
+    to {
+        transform: translateY(calc(var(--pparallax-speed) * 200px));
+    }
 }
 
 /**************/

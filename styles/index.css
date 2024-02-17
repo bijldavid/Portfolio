@@ -2,18 +2,18 @@
 /* BANNER */
 /* ====== */
 
-main>div:nth-of-type(1) {
+.parallax {
     position: relative;
     background-color: var(--color-background2);
 }
 
-main>div:nth-of-type(1) section {
+.parallax section {
     position: absolute;
     bottom: 1.5em;
     padding: 0 0 0 1.5em;
 }
 
-main>div:nth-of-type(1) section h1 {
+.parallax section h1 {
     font-family: "komet", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -22,7 +22,7 @@ main>div:nth-of-type(1) section h1 {
     color: var(--color-htext2);
 }
 
-main>div:nth-of-type(1) section h2 {
+.parallax section h2 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -33,19 +33,19 @@ main>div:nth-of-type(1) section h2 {
     padding: .5em 0 0 0;
 }
 
-main>div:nth-of-type(1) img:nth-of-type(1) {
+.parallax img:nth-of-type(1) {
     margin-top: -70px;
     height: auto;
     width: 100%;
     display: block;
 }
 
-main>div:nth-of-type(1) img:nth-of-type(2),
-main>div:nth-of-type(1) img:nth-of-type(3),
-main>div:nth-of-type(1) img:nth-of-type(4),
-main>div:nth-of-type(1) img:nth-of-type(5),
-main>div:nth-of-type(1) img:nth-of-type(6),
-main>div:nth-of-type(1) img:nth-of-type(7) {
+.parallax img:nth-of-type(2),
+.parallax img:nth-of-type(3),
+.parallax img:nth-of-type(4),
+.parallax img:nth-of-type(5),
+.parallax img:nth-of-type(6),
+.parallax img:nth-of-type(7) {
     display: none;
 }
 
@@ -54,26 +54,28 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
 /* MY WORK */
 /* ======= */
 
-.main2 {
+main {
+    position: relative;
     background-color: var(--color-background1);
+    z-index: 100;
 }
 
 
-.main2>h2 {
+main>h2 {
     padding: 2.5em 1em 0;
 }
 
-.main2>.line {
+main>.line {
     margin: .5em 1.5em 1.3em;
 }
 
-.main2>ul:nth-of-type(1) li {
+main>ul:nth-of-type(1) li {
     display: flex;
     flex-direction: column;
     padding: 0 1.5em;
 }
 
-.main2>ul:nth-of-type(1) li h3:nth-of-type(1) {
+main>ul:nth-of-type(1) li h3:nth-of-type(1) {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -82,7 +84,7 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
     padding-top: 20px;
 }
 
-.main2>ul:nth-of-type(1) li h3:nth-of-type(2) {
+main>ul:nth-of-type(1) li h3:nth-of-type(2) {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -91,7 +93,7 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
     padding-top: 8px;
 }
 
-.main2>ul:nth-of-type(1) li p {
+main>ul:nth-of-type(1) li p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -100,7 +102,7 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
     padding-top: 8px;
 }
 
-.main2>ul:nth-of-type(1) li a {
+main>ul:nth-of-type(1) li a {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -113,7 +115,7 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
     text-align: center;
 }
 
-.main2>ul:nth-of-type(1) li img {
+main>ul:nth-of-type(1) li img {
     max-width: 100%;
     order: -1;
 }
@@ -291,78 +293,124 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
 
 @media (min-width: 700px) {
 
-    main>div:nth-of-type(1) img:nth-of-type(1) {
+    .parallax {
+        position: relative;
+        z-index: 0;
+        display: grid;
+        margin-top: -90px;
+    }
+
+    .parallax > * {
+        grid-area: stack;
+        animation: parallax linear;
+        animation-timeline: scroll();
+    }
+
+    .parallax img:nth-of-type(1) {
         display: none;
     }
 
-    main>div:nth-of-type(1) img:nth-of-type(2),
-    main>div:nth-of-type(1) img:nth-of-type(3),
-    main>div:nth-of-type(1) img:nth-of-type(4),
-    main>div:nth-of-type(1) img:nth-of-type(5),
-    main>div:nth-of-type(1) img:nth-of-type(6),
-    main>div:nth-of-type(1) img:nth-of-type(7) {
-        margin-top: -90px;
+    .parallax img:nth-of-type(2),
+    .parallax img:nth-of-type(3),
+    .parallax img:nth-of-type(4),
+    .parallax img:nth-of-type(5),
+    .parallax img:nth-of-type(6),
+    .parallax img:nth-of-type(7) {
         height: auto;
         width: 100%;
         display: block;
     }
 
-    main>div:nth-of-type(1) section {
+    .parallax img:nth-of-type(2) {
+        --pparallax-speed: -12;
+        z-index: 1;
+    }
+
+    .parallax img:nth-of-type(3) {
+        --pparallax-speed: -8;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .parallax img:nth-of-type(4) {
+        --pparallax-speed: -4;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .parallax img:nth-of-type(5) {
+        --pparallax-speed: -2;
+        position: absolute;
+        z-index: 4;
+    }
+
+    .parallax img:nth-of-type(6) {
+        --pparallax-speed: -1;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .parallax img:nth-of-type(7) {
+        --pparallax-speed: 0;
+        z-index: 6;
+    }
+
+    .parallax section {
         top: 40%;
         padding-left: 6.5em;
     }
 
-    main>div:nth-of-type(1) section h1 {
+    .parallax section h1 {
         font-size: 6vw;
     }
 
-    main>div:nth-of-type(1) section h2 {
+    .parallax section h2 {
         font-size: 1.7vw;
     }
 
 
     /* My work */
 
-    .main2>h2 {
+    main>h2 {
         font-size: 2.4em;
         padding: 2.5em 95px 0;
     }
 
-    .main2>.line {
+    main>.line {
         margin: .5em 6em 1.3em;
     }
     
-    .main2>ul:nth-of-type(1) {
+    main>ul:nth-of-type(1) {
         padding: 1em 0 4em 0;
     }
 
-    .main2>ul:nth-of-type(1) li {
+    main>ul:nth-of-type(1) li {
         display: flex;
         flex-direction: row;
         padding: 2em 6em;
         gap: 5em;
     }
 
-    .main2>ul:nth-of-type(1) li img {
+    main>ul:nth-of-type(1) li img {
         order: 0;
         max-width: 60%;
         object-fit: contain;
     }
 
-    .main2>ul:nth-of-type(1) li h3:nth-of-type(1) {
+    main>ul:nth-of-type(1) li h3:nth-of-type(1) {
         font-size: 1.2em;
         padding: 0;
     }
 
-    .main2>ul:nth-of-type(1) li h3:nth-of-type(2) {
+    main>ul:nth-of-type(1) li h3:nth-of-type(2) {
         font-size: 1.2em;
     }
 
-    .main2>ul:nth-of-type(1) li p {
+    main>ul:nth-of-type(1) li p {
         font-size: 1em;
     }
 
-    .main2>ul:nth-of-type(1) li a {
+    main>ul:nth-of-type(1) li a {
         width: max-content;
         padding: .8em 3.5em .8em 2em;
         margin-bottom: 0;
@@ -370,7 +418,7 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
         position: relative;
     }
 
-    .main2>ul:nth-of-type(1) li a:after {
+    main>ul:nth-of-type(1) li a:after {
         position: absolute;
         display: block;
         width: 11px;
@@ -411,13 +459,4 @@ main>div:nth-of-type(1) img:nth-of-type(7) {
         padding: 3em;
         order: -1;
     }
-
-    .parallax {
-        display: grid;
-    }
-
-    .parallax > * {
-        grid-area: stack;
-    }
-
 }
