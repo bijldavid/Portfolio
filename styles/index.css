@@ -1,4 +1,6 @@
-/* banner css */
+/* ====== */
+/* BANNER */
+/* ====== */
 
 main>div:nth-of-type(1) {
     position: relative;
@@ -31,11 +33,20 @@ main>div:nth-of-type(1) section h2 {
     padding: .5em 0 0 0;
 }
 
-main>div:nth-of-type(1) img {
+main>div:nth-of-type(1) img:nth-of-type(1) {
     margin-top: -70px;
     height: auto;
     width: 100%;
     display: block;
+}
+
+main>div:nth-of-type(1) img:nth-of-type(2),
+main>div:nth-of-type(1) img:nth-of-type(3),
+main>div:nth-of-type(1) img:nth-of-type(4),
+main>div:nth-of-type(1) img:nth-of-type(5),
+main>div:nth-of-type(1) img:nth-of-type(6),
+main>div:nth-of-type(1) img:nth-of-type(7) {
+    display: none;
 }
 
 
@@ -52,7 +63,7 @@ main>div:nth-of-type(1) img {
     padding: 2.5em 1em 0;
 }
 
-.main2 > .line {
+.main2>.line {
     margin: .5em 1.5em 1.3em;
 }
 
@@ -103,8 +114,7 @@ main>div:nth-of-type(1) img {
 }
 
 .main2>ul:nth-of-type(1) li img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     order: -1;
 }
 
@@ -125,7 +135,7 @@ main>div:nth-of-type(1) img {
     padding: .5em 0;
     gap: .7em;
     align-items: center;
-    animation: scroll 25s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
@@ -193,15 +203,20 @@ main>div:nth-of-type(1) img {
 }
 
 .about-me section>img {
-    width: 100%;
+    padding: 2em;
+    width: 80%;
     height: auto;
 }
 
-.about-me>img {
+.about-me>img:nth-of-type(1) {
     position: relative;
     display: block;
     width: 100%;
     height: auto;
+}
+
+.about-me>img:nth-of-type(2) {
+    display: none;
 }
 
 
@@ -266,4 +281,143 @@ main>div:nth-of-type(1) img {
 .contact div div a:nth-of-type(2) img {
     height: 20px;
     width: auto;
+}
+
+
+/*************************************************************
+==========================desktop=============================
+*************************************************************/
+
+
+@media (min-width: 700px) {
+
+    main>div:nth-of-type(1) img:nth-of-type(1) {
+        display: none;
+    }
+
+    main>div:nth-of-type(1) img:nth-of-type(2),
+    main>div:nth-of-type(1) img:nth-of-type(3),
+    main>div:nth-of-type(1) img:nth-of-type(4),
+    main>div:nth-of-type(1) img:nth-of-type(5),
+    main>div:nth-of-type(1) img:nth-of-type(6),
+    main>div:nth-of-type(1) img:nth-of-type(7) {
+        margin-top: -90px;
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+
+    main>div:nth-of-type(1) section {
+        top: 40%;
+        padding-left: 6.5em;
+    }
+
+    main>div:nth-of-type(1) section h1 {
+        font-size: 6vw;
+    }
+
+    main>div:nth-of-type(1) section h2 {
+        font-size: 1.7vw;
+    }
+
+
+    /* My work */
+
+    .main2>h2 {
+        font-size: 2.4em;
+        padding: 2.5em 95px 0;
+    }
+
+    .main2>.line {
+        margin: .5em 6em 1.3em;
+    }
+    
+    .main2>ul:nth-of-type(1) {
+        padding: 1em 0 4em 0;
+    }
+
+    .main2>ul:nth-of-type(1) li {
+        display: flex;
+        flex-direction: row;
+        padding: 2em 6em;
+        gap: 5em;
+    }
+
+    .main2>ul:nth-of-type(1) li img {
+        order: 0;
+        max-width: 60%;
+        object-fit: contain;
+    }
+
+    .main2>ul:nth-of-type(1) li h3:nth-of-type(1) {
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    .main2>ul:nth-of-type(1) li h3:nth-of-type(2) {
+        font-size: 1.2em;
+    }
+
+    .main2>ul:nth-of-type(1) li p {
+        font-size: 1em;
+    }
+
+    .main2>ul:nth-of-type(1) li a {
+        width: max-content;
+        padding: .8em 3.5em .8em 2em;
+        margin-bottom: 0;
+        font-size: 1em;
+        position: relative;
+    }
+
+    .main2>ul:nth-of-type(1) li a:after {
+        position: absolute;
+        display: block;
+        width: 11px;
+        height: 11px;
+        background-image: url('../images/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        right: 1.5em;
+        top: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    /* About */
+
+    .about-me section {
+        padding: 0 6em 0 3em;
+    }
+
+    .about-me>img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .about-me>img:nth-of-type(2) {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-me section {
+        display: flex;
+    }
+
+    .about-me section>img {
+        width: 50%;
+        height: auto;
+        padding: 3em;
+        order: -1;
+    }
+
+    .parallax {
+        display: grid;
+    }
+
+    .parallax > * {
+        grid-area: stack;
+    }
+
 }

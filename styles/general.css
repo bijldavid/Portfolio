@@ -267,3 +267,59 @@ footer nav img {
     height: 17px;
     width: auto;
 }
+
+
+/*************************************************************
+==========================desktop=============================
+*************************************************************/
+
+
+@media (min-width: 700px) {
+
+    header {
+        padding: 1em 6em;
+    }
+
+    header .hamburger {
+		display: none;
+	}
+
+    header nav {
+		position: static;
+		translate: 0 0;
+		background-color: transparent;
+		transition: none;
+	}
+
+    header a p {
+        font-size: 2.4em;
+    }
+
+
+    header nav ul {
+		position: static;
+		display: flex;
+		gap: .5em
+	}
+
+    header nav a {
+		color: var(--color-htext2);
+        font-family: "century-gothic", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1em;
+		border: solid transparent;
+		padding: 1em 1.7em;
+		border-radius: 2.5em;
+		background-color: transparent;
+	}
+
+    header nav a:hover {
+		border: solid;
+		border-color: var(--color-htext2);
+		background-color: transparent;
+		color: var(--color-htext2);
+	}
+
+
+}
