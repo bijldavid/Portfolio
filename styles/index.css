@@ -230,7 +230,7 @@ main>ul:nth-of-type(1) li img {
     padding: 1.5em;
 }
 
-.contact>div {
+.background {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -238,15 +238,11 @@ main>ul:nth-of-type(1) li img {
     background-color: var(--color-background2);
 }
 
-.contact div>img:nth-of-type(1) {
-    padding-bottom: 1em;
-}
-
-.contact h2 {
+.left-con h2 {
     padding-top: 0;
 }
 
-.contact h3 {
+.left-con h3 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -255,12 +251,17 @@ main>ul:nth-of-type(1) li img {
     padding-top: 8px;
 }
 
-.contact div .contact-buttons {
+.right-con img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.contact div .contact-buttons a {
+.contact-buttons a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,12 +276,12 @@ main>ul:nth-of-type(1) li img {
     gap: 10px;
 }
 
-.contact div div a:nth-of-type(1) img {
+.contact a:nth-of-type(1) img {
     height: 15px;
     width: auto;
 }
 
-.contact div div a:nth-of-type(2) img {
+.contact a:nth-of-type(2) img {
     height: 20px;
     width: auto;
 }
@@ -301,7 +302,7 @@ main>ul:nth-of-type(1) li img {
 
     }
 
-    .parallax > * {
+    .parallax>* {
         grid-area: stack;
         animation: parallax linear;
         animation-timeline: scroll();
@@ -380,7 +381,7 @@ main>ul:nth-of-type(1) li img {
     main>.line {
         margin: .5em 6em 1.3em;
     }
-    
+
     main>ul:nth-of-type(1) {
         padding: 1em 0 4em 0;
     }
@@ -444,7 +445,7 @@ main>ul:nth-of-type(1) li img {
     .about-me>img:nth-of-type(1) {
         display: none;
     }
-    
+
     .about-me>img:nth-of-type(2) {
         position: relative;
         display: block;
@@ -476,4 +477,63 @@ main>ul:nth-of-type(1) li img {
     .about-me section p {
         font-size: 1em;
     }
+
+
+    /* contact */
+
+    .contact {
+        padding: 8em 6em 3em 12em;
+    }
+
+    .contact .line {
+        display: none;
+    }
+
+    .background {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        justify-content: space-between;
+        height: 40vw;
+    }
+
+    .left-con {
+        width: 40%;
+        position: absolute;
+        left: -6em;
+        top: 5em;
+    }
+
+    .left-con h2 {
+        font-size: 6vw;
+        line-height: 1em;
+    }
+
+    .left-con h3 {
+        font-size: 1.7vw;
+    }
+
+    .right-con {
+        position: absolute;
+        height: 90%;
+        right: 2em;
+        top: -6em;
+    }
+
+    .right-con>img {
+        height: 100%;
+        width: auto;
+    }
+
+    .contact-buttons {
+        padding: 0 1em;
+    }
+
+    .contact-buttons a {
+        font-size: 1em;
+        width: 170px;
+        height: 45px;
+    }
+
 }
