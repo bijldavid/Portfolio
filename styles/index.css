@@ -298,6 +298,7 @@ main>ul:nth-of-type(1) li img {
         z-index: 0;
         display: grid;
         margin-top: -90px;
+
     }
 
     .parallax > * {
