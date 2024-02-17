@@ -357,8 +357,8 @@ main>ul:nth-of-type(1) li img {
     }
 
     .parallax section {
-        top: 40%;
-        padding-left: 6.5em;
+        top: 30%;
+        padding-left: 6em;
     }
 
     .parallax section h1 {
@@ -388,13 +388,14 @@ main>ul:nth-of-type(1) li img {
     main>ul:nth-of-type(1) li {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         padding: 2em 6em;
         gap: 5em;
     }
 
     main>ul:nth-of-type(1) li img {
         order: 0;
-        max-width: 60%;
+        max-width: 50%;
         object-fit: contain;
     }
 
@@ -433,6 +434,7 @@ main>ul:nth-of-type(1) li img {
         transform: translate(-50%, -40%);
     }
 
+
     /* About */
 
     .about-me section {
@@ -452,6 +454,7 @@ main>ul:nth-of-type(1) li img {
 
     .about-me section {
         display: flex;
+        gap: 1em;
     }
 
     .about-me section>img {
@@ -459,5 +462,18 @@ main>ul:nth-of-type(1) li img {
         height: auto;
         padding: 3em;
         order: -1;
+        object-fit: contain;
+    }
+
+    .about-me section h2 {
+        font-size: 2.4em;
+    }
+
+    .about-me section h3 {
+        font-size: 1.2em;
+    }
+
+    .about-me section p {
+        font-size: 1em;
     }
 }
