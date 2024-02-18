@@ -37,6 +37,10 @@ main > img:nth-of-type(2) {
     color: var(--color-alttext);
 }
 
+.tonik-float>section div {
+    gap: 3em;
+}
+
 .tonik-float>section div section h3 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
@@ -60,13 +64,20 @@ main > img:nth-of-type(2) {
 .con>section:nth-of-type(1) {
     background-color: var(--color-background-tonik);
     padding: 14em 1.5em 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.con>section:nth-of-type(1) h2 {
+.con>section:nth-of-type(1) div:nth-of-type(1) {
+    flex-direction: column;
+    display: flex;
+}
+
+.con>section:nth-of-type(1) div:nth-of-type(1) h2 {
     color: white;
 }
 
-.con>section:nth-of-type(1) p {
+.con>section:nth-of-type(1) div:nth-of-type(1) p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -75,32 +86,24 @@ main > img:nth-of-type(2) {
     padding: .5em 0 0;
 }
 
-.con>section:nth-of-type(1) div:nth-of-type(1) {
-    flex-direction: column;
-    display: flex;
-}
-
 .con>section:nth-of-type(1) div:nth-of-type(2) {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: baseline;
     width: 100%;
-    gap: 1em;
-    padding: 2em 2em 4em;
+    margin: 3em 0;
     margin-left: -30px;
 }
 
-.con>section:nth-of-type(1) div img:nth-of-type(1) {
-    width: auto;
-    height: 15em;
-    display: block;
-}
+.con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(1) {
+    width: 60%;
+    object-fit: contain;
+} 
 
-.con>section:nth-of-type(1) div img:nth-of-type(2) {
-    width: auto;
-    height: 12em;
-    display: block;
-}
+.con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2) {
+    width: 40%;
+    object-fit: contain;
+}   
 
 
 /* USER JOURNEY */
@@ -223,11 +226,11 @@ main > img:nth-of-type(2) {
     display: block;
 }
 
-.timeline > div {
+.timeline > div:nth-of-type(2) {
     display: flex;
 }
 
-.timeline > div img {
+.timeline > div:nth-of-type(2) img {
     width: 50%;
     height: auto;
     display: block;
@@ -265,7 +268,6 @@ main > img:nth-of-type(2) {
 
     .tonik-float>section div {
         display: flex;
-        gap: 3em;
     }
 
     .tonik-float>section h1 {
@@ -288,29 +290,28 @@ main > img:nth-of-type(2) {
 
     .con>section:nth-of-type(1) {
         display: flex;
+        flex-direction: row;
         padding: 18em 6em 0;
     }
 
-    .con>section:nth-of-type(1) div:nth-of-type(1) {
-        flex-direction: column;
-        max-width: 50%;
-    }
-
-    .con>section:nth-of-type(1) div:nth-of-type(2) {
-        max-width: 50%;
-        gap: 3em;
-    }
-
-    .con>section:nth-of-type(1) h2 {
+    .con>section:nth-of-type(1) div:nth-of-type(1) h2 {
         font-size: 2.4em;
     }
 
-    .con>section:nth-of-type(1) p {
+    .con>section:nth-of-type(1) div:nth-of-type(1) p {
         font-size: 1em;
+        padding-bottom: 2em;
     }
 
-    .con>section:nth-of-type(1) div img:nth-of-type(1) {
-        height: 20em;
+    .con>section:nth-of-type(1) div:nth-of-type(1) {
+        max-width: 60%;
     }
+    
+    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(1){
+        max-height: 20em;
+    }   
 
+    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2){
+        max-height: 13em;
+    }   
 }
