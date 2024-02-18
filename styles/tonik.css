@@ -2,14 +2,14 @@ main {
     background-color: var(--color-background2);
 }
 
-main > img:nth-of-type(1) {
+main>img:nth-of-type(1) {
     width: 100%;
     height: auto;
     margin-top: -70px;
     display: block;
 }
 
-main > img:nth-of-type(2) {
+main>img:nth-of-type(2) {
     display: none;
 }
 
@@ -98,21 +98,21 @@ main > img:nth-of-type(2) {
 .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(1) {
     width: 60%;
     object-fit: contain;
-} 
+}
 
 .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2) {
     width: 40%;
     object-fit: contain;
-}   
+}
 
 
 /* USER JOURNEY */
 
-.timeline>section:nth-of-type(1) {
+.timeline-right>section:nth-of-type(1) {
     padding: 4em 1.5em 2em;
 }
 
-.timeline>section:nth-of-type(1) img {
+.timeline-right>section:nth-of-type(1) img {
     width: 100%;
     display: block;
     margin-top: 1em;
@@ -122,23 +122,23 @@ main > img:nth-of-type(2) {
 
 /* USER REQUIREMENTS */
 
-.timeline>section:nth-of-type(2) {
+.timeline-right>section:nth-of-type(2) {
     padding: 2em 1.5em 2em;
 }
 
-.timeline>section:nth-of-type(2) > div {
+.timeline-right>section:nth-of-type(2)>div {
     display: flex;
     flex-direction: column;
     gap: 1em;
     margin-top: 1em;
 }
 
-.timeline>section:nth-of-type(2) > div div {
+.timeline-right>section:nth-of-type(2)>div div {
     padding: 1em;
     border-radius: .5em;
 }
 
-.timeline>section:nth-of-type(2) > div div h3 {
+.timeline-right>section:nth-of-type(2)>div div h3 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -147,7 +147,7 @@ main > img:nth-of-type(2) {
     padding-bottom: .2em;
 }
 
-.timeline>section:nth-of-type(2) > div div p {
+.timeline-right>section:nth-of-type(2)>div div p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -156,32 +156,32 @@ main > img:nth-of-type(2) {
 }
 
 
-.timeline>section:nth-of-type(2) > div div:nth-of-type(1),
-.timeline>section:nth-of-type(2) > div div:nth-of-type(2),
-.timeline>section:nth-of-type(2) > div div:nth-of-type(3) {
+.timeline-right>section:nth-of-type(2)>div div:nth-of-type(1),
+.timeline-right>section:nth-of-type(2)>div div:nth-of-type(2),
+.timeline-right>section:nth-of-type(2)>div div:nth-of-type(3) {
     background-color: #0A2A2F;
 }
 
-.timeline>section:nth-of-type(2) > div div:nth-of-type(4) {
+.timeline-right>section:nth-of-type(2)>div div:nth-of-type(4) {
     background-color: #082428;
 }
 
-.timeline>section:nth-of-type(2) > div div:nth-of-type(5) {
+.timeline-right>section:nth-of-type(2)>div div:nth-of-type(5) {
     background-color: #072125;
 }
 
 
 /* WIREFRAMES + WIREFLOW */
 
-.timeline>section:nth-of-type(3) {
+.timeline-right>section:nth-of-type(3) {
     padding: 2em 1.5em 2em;
 }
 
-.timeline>section:nth-of-type(3) h2 {
+.timeline-right>section:nth-of-type(3) h2 {
     padding-bottom: .3em;
 }
 
-.timeline>section:nth-of-type(3) p {
+.timeline-right>section:nth-of-type(3) p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -189,7 +189,7 @@ main > img:nth-of-type(2) {
     color: var(--color-broodtext);
 }
 
-.timeline>section:nth-of-type(3) img {
+.timeline-right>section:nth-of-type(3) img {
     width: 100%;
     height: auto;
     padding: 1.5em 0;
@@ -198,17 +198,17 @@ main > img:nth-of-type(2) {
 
 /* FINAL PRODUCT */
 
-.timeline > img:nth-of-type(1) {
+.timeline-right>img:nth-of-type(1) {
     width: 100%;
     height: auto;
 }
 
-.timeline>section:nth-of-type(4) {
+.timeline-right>section:nth-of-type(4) {
     padding: 2em 1.5em 2em;
     margin-top: -100px;
 }
 
-.timeline>section:nth-of-type(4) p {
+.timeline-right>section:nth-of-type(4) p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -220,17 +220,17 @@ main > img:nth-of-type(2) {
 
 /* MOCKUPS */
 
-.timeline > img:nth-of-type(2) {
+main>img:nth-of-type(3) {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.timeline > div:nth-of-type(2) {
+main>div:nth-of-type(2) {
     display: flex;
 }
 
-.timeline > div:nth-of-type(2) img {
+main>div:nth-of-type(2) img {
     width: 50%;
     height: auto;
     display: block;
@@ -244,18 +244,66 @@ main > img:nth-of-type(2) {
 
 @media (min-width: 700px) {
 
-    main > img:nth-of-type(1) {
+    .timeline {
+        position: relative;
+    }
+
+    .timeline-left {
+        position: absolute;
+        height: 91%;
+        top: 0;
+        border-left: dashed 3px white;
+        margin: 17.8em 0 0 6em;
+    }
+
+    .research {
+        height: 33%;
+        text-align: center;
+    }
+
+
+    .me-fi {
+        height: 33%;
+        text-align: center;
+    }
+
+    .hi-fi {
+        height: 34%;
+        text-align: center;
+    }
+
+    .timeline-left div>div {
+        position: sticky;
+        top: 6em;
+    }
+
+    .timeline-left div>div p {
+        font-family: "century-gothic", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1em;
+        border: solid 3px white;
+        padding: 1em 1.5em;
+        color: white;
+        margin-left: -3px;
+    }
+
+
+
+    /* float */
+
+    main>img:nth-of-type(1) {
         display: none;
     }
-    
-    main > img:nth-of-type(2) {
+
+    main>img:nth-of-type(2) {
         width: 100%;
         height: auto;
         margin-top: -90px;
         display: block;
     }
 
-    .tonik-float{
+    .tonik-float {
         position: absolute;
         min-width: 100%;
         padding: 6em;
@@ -291,7 +339,7 @@ main > img:nth-of-type(2) {
     .con>section:nth-of-type(1) {
         display: flex;
         flex-direction: row;
-        padding: 18em 6em 0;
+        padding: 18em 6em 0 17em;
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) h2 {
@@ -304,14 +352,16 @@ main > img:nth-of-type(2) {
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) {
-        max-width: 60%;
+        max-width: 50%;
     }
-    
-    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(1){
-        max-height: 20em;
-    }   
 
-    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2){
+    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(1) {
+        max-height: 20em;
+    }
+
+    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2) {
         max-height: 13em;
-    }   
+    }
+
+    /* user journey */
 }
