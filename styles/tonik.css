@@ -276,18 +276,21 @@ main>div:nth-of-type(2) img {
     }
 
     .research {
-        height: 91.5em;
+        /* height: 91.5em; */
+        height: 49%;
         text-align: center;
     }
 
 
     .me-fi {
-        height: 47.5em;
+        /* height: 47.5em; */
+        height: 25.5%;
         text-align: center;
     }
 
     .hi-fi {
-        height: 48em;
+        /* height: 48em; */
+        height: 25.5%;
         text-align: center;
     }
 
