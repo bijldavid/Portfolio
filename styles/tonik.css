@@ -189,10 +189,14 @@ main>img:nth-of-type(2) {
     color: var(--color-broodtext);
 }
 
-.timeline-right>section:nth-of-type(3) img {
+.timeline-right>section:nth-of-type(3) img:nth-of-type(1) {
     width: 100%;
     height: auto;
     padding: 1.5em 0;
+}
+
+.timeline-right>section:nth-of-type(3) img:nth-of-type(2) {
+    display: none;
 }
 
 
@@ -236,6 +240,12 @@ main>div:nth-of-type(2) img {
     display: block;
 }
 
+/* GENERAL */
+
+.line {
+    display: none;
+}
+
 
 /*************************************************************
 ==========================desktop=============================
@@ -252,7 +262,14 @@ main>div:nth-of-type(2) img {
         position: absolute;
         height: 91%;
         top: 0;
-        border-left: dashed 3px white;
+        border-left: 3px solid transparent; /* Set a solid border to define the thickness */
+        border-image: repeating-linear-gradient(
+          to bottom, 
+          white 0, 
+          white 5px, /* Adjust the length of each dash */
+          transparent 3px, 
+          transparent 12px /* Adjust the gap between dashes */
+        ) 1; /* 1 indicates that the border-image should be sliced into pieces */
         margin: 17.8em 0 0 6em;
     }
 
@@ -334,6 +351,7 @@ main>div:nth-of-type(2) img {
         font-size: clamp(.3em, 1.3vw, 1em);
     }
 
+
     /* concept */
 
     .con>section:nth-of-type(1) {
@@ -363,5 +381,82 @@ main>div:nth-of-type(2) img {
         max-height: 13em;
     }
 
+
     /* user journey */
+
+    .timeline-right>section:nth-of-type(1) {
+        padding: 4em 6em 0 18em;
+    }
+
+    .timeline-right>section:nth-of-type(1) h2 {
+        font-size: 2.4em;
+        color: white;
+    }
+
+
+    /* user requirements */
+
+    .timeline-right>section:nth-of-type(2) {
+        padding: 4em 6em 0 18em;
+    }
+
+    .timeline-right>section:nth-of-type(2) h2 {
+        font-size: 2.4em;
+        color: white;
+    }
+
+    .timeline-right>section:nth-of-type(2)>div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    .timeline-right>section:nth-of-type(2)>div div p {
+        padding-bottom: 1em;
+    }
+
+    /* wireframes & wireflow */
+
+    .timeline-right>section:nth-of-type(3) {
+        padding: 0 6em 0 18em;
+    }
+
+    .timeline-right>section:nth-of-type(3) h2 {
+        font-size: 2.4em;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .timeline-right>section:nth-of-type(3) img:nth-of-type(1) {
+        display: none;
+    }
+
+    .timeline-right>section:nth-of-type(3) img:nth-of-type(2) {
+        width: 100%;
+        height: auto;
+        padding: 1.5em 0;
+        display: inline;
+    }
+
+    .timeline-right>section:nth-of-type(3) p {
+        font-size: 1em;
+        color: white;
+    }
+
+    .timeline-right>section:nth-of-type(3) p:nth-of-type(1) {
+        padding-top: .8em;
+    }
+
+
+    /* general */
+
+    .line {
+        display: block;
+        border: none;
+        height: 1.5px;
+        background-color: var(--color-line);
+        margin: 4em 6em 4em 18em;
+    }
+
 }
