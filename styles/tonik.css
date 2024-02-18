@@ -63,7 +63,7 @@ main>img:nth-of-type(2) {
 
 .con>section:nth-of-type(1) {
     background-color: var(--color-background-tonik);
-    padding: 14em 1.5em 0;
+    padding: 18em 1.5em 0;
     display: flex;
     flex-direction: column;
 }
@@ -242,6 +242,10 @@ main>div:nth-of-type(2) img {
     width: 50%;
     height: auto;
     display: block;
+}
+
+.timeline-left {
+    display: none;
 }
 
 /* GENERAL */
