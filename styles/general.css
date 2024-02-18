@@ -329,4 +329,10 @@ footer nav img {
 	}
 
 
+    /* footer */
+
+    footer {
+        padding: 1.5em 6em;
+        align-items: center;
+    }
 }
