@@ -207,6 +207,10 @@ main>img:nth-of-type(2) {
     height: auto;
 }
 
+.timeline-right>img:nth-of-type(2) {
+    display: none;
+}
+
 .timeline-right>section:nth-of-type(4) {
     padding: 2em 1.5em 2em;
     margin-top: -100px;
@@ -260,32 +264,30 @@ main>div:nth-of-type(2) img {
 
     .timeline-left {
         position: absolute;
-        height: 91%;
+        height: 86%;
         top: 0;
-        border-left: 3px solid transparent; /* Set a solid border to define the thickness */
-        border-image: repeating-linear-gradient(
-          to bottom, 
-          white 0, 
-          white 5px, /* Adjust the length of each dash */
-          transparent 3px, 
-          transparent 12px /* Adjust the gap between dashes */
-        ) 1; /* 1 indicates that the border-image should be sliced into pieces */
+        border-left: 3px solid transparent;
+        border-image: repeating-linear-gradient(to bottom,
+                white 0,
+                white 5px,
+                transparent 3px,
+                transparent 12px) 1;
         margin: 17.8em 0 0 6em;
     }
 
     .research {
-        height: 1460px;
+        height: 91.5em;
         text-align: center;
     }
 
 
     .me-fi {
-        height: 760px;
+        height: 47.5em;
         text-align: center;
     }
 
     .hi-fi {
-        height: 34%;
+        height: 48hem;
         text-align: center;
     }
 
@@ -445,6 +447,39 @@ main>div:nth-of-type(2) img {
     }
 
     .timeline-right>section:nth-of-type(3) p:nth-of-type(1) {
+        padding-top: .8em;
+    }
+
+
+    /* final product */
+
+    .timeline-right>img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .timeline-right>img:nth-of-type(2) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .timeline-right>section:nth-of-type(4) {
+        padding: 0 6em 4em 18em;
+    }
+
+    .timeline-right>section:nth-of-type(4) h2 {
+        font-size: 2.4em;
+        color: white;
+    }
+
+    .timeline-right>section:nth-of-type(4) div {
+        display: flex;
+        gap: 3em;
+    }
+
+    .timeline-right>section:nth-of-type(4) div p {
+        font-size: 1em;
+        color: white;
         padding-top: .8em;
     }
 
