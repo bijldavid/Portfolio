@@ -426,7 +426,7 @@ main>ul:nth-of-type(1) li img {
         display: block;
         width: 11px;
         height: 11px;
-        background-image: url('../images/arrow.svg');
+        background-image: url('../images/homepage/arrow.svg');
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
