@@ -277,6 +277,7 @@ main>div:nth-of-type(2) img {
                 transparent 3px,
                 transparent 12px) 1;
         margin: 17.8em 0 0 6em;
+        display: block;
     }
 
     .research {
