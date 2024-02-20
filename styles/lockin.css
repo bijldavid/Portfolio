@@ -257,16 +257,15 @@ main>div:nth-of-type(2) img {
     display: block;
 }
 
-.timeline-left {
-    display: none;
-}
-
 /* GENERAL */
 
 .line {
     display: none;
 }
 
+.timeline-left {
+    display: none;
+}
 
 /*************************************************************
 ==========================desktop=============================

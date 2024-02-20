@@ -122,11 +122,15 @@ main>img:nth-of-type(2) {
     padding: .5em 0 0;
 }
 
-.timeline-right>section:nth-of-type(1) video {
+.timeline-right>section:nth-of-type(1) video:nth-of-type(1) {
     width: 100%;
     display: block;
     margin-top: 1em;
     border-radius: .5em;
+}
+
+.timeline-right>section:nth-of-type(1) video:nth-of-type(2) {
+    display: none;
 }
 
 
@@ -162,14 +166,14 @@ main>img:nth-of-type(2) {
 }
 
 
-/* WIREFRAMES + WIREFLOW */
+/* RESPONSIVENESS */
 
 .timeline-right>section:nth-of-type(3) {
-    padding: 2em 1.5em 2em;
+    padding: 4em 1.5em 2em;
 }
 
 .timeline-right>section:nth-of-type(3) h2 {
-    padding-bottom: .3em;
+    color: white;
 }
 
 .timeline-right>section:nth-of-type(3) p {
@@ -177,71 +181,87 @@ main>img:nth-of-type(2) {
     font-weight: 400;
     font-style: normal;
     font-size: .75em;
-    color: var(--color-broodtext);
+    color: white;
 }
 
-.timeline-right>section:nth-of-type(3) img:nth-of-type(1) {
+.timeline-right>section:nth-of-type(3) video {
     width: 100%;
-    height: auto;
-    padding: 1.5em 0;
-}
-
-.timeline-right>section:nth-of-type(3) img:nth-of-type(2) {
-    display: none;
+    display: block;
+    margin-top: 1em;
+    border-radius: .5em;
 }
 
 
-/* FINAL PRODUCT */
-
-.timeline-right>img:nth-of-type(1) {
-    width: 100%;
-    height: auto;
-}
-
-.timeline-right>img:nth-of-type(2) {
-    display: none;
-}
+/* ANIMATION */
 
 .timeline-right>section:nth-of-type(4) {
     padding: 2em 1.5em 2em;
-    margin-top: -100px;
 }
 
-.timeline-right>section:nth-of-type(4) p {
+.timeline-right>section:nth-of-type(4) div {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-right>section:nth-of-type(4) div h2 {
+    color: white;
+}
+
+.timeline-right>section:nth-of-type(4) div p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: .75em;
-    color: var(--color-broodtext);
-    padding: .5em 0 2em;
+    color: white;
+    padding: .5em 0 0;
 }
 
-
-/* MOCKUPS */
-
-main>img:nth-of-type(3) {
+.timeline-right>section:nth-of-type(4) video {
     width: 100%;
-    height: auto;
     display: block;
+    margin-top: 1em;
+    border-radius: .5em;
 }
 
-main>div:nth-of-type(2) {
+
+/* QUIRCKS */
+
+.timeline-right>section:nth-of-type(5) {
+    padding: 2em 1.5em 2em;
+}
+
+.timeline-right>section:nth-of-type(5) div {
     display: flex;
+    flex-direction: column;
 }
 
-main>div:nth-of-type(2) img {
-    width: 50%;
-    height: auto;
+.timeline-right>section:nth-of-type(5) div h2 {
+    color: white;
+}
+
+.timeline-right>section:nth-of-type(5) div p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: white;
+    padding: .5em 0 0;
+}
+
+.timeline-right>section:nth-of-type(5) video {
+    width: 100%;
     display: block;
-}
-
-.timeline-left {
-    display: none;
+    margin-top: 1em;
+    border-radius: .5em;
 }
 
 /* GENERAL */
 
 .line {
+    display: none;
+}
+
+.timeline-left {
     display: none;
 }
 
@@ -259,7 +279,7 @@ main>div:nth-of-type(2) img {
 
     .timeline-left {
         position: absolute;
-        height: 86%;
+        height: 83%;
         top: 0;
         border-left: 3px solid transparent;
         border-image: repeating-linear-gradient(to bottom,
@@ -273,14 +293,14 @@ main>div:nth-of-type(2) img {
 
     .research {
         /* height: 91.5em; */
-        height: 49%;
+        height: 53.5%;
         text-align: center;
     }
 
 
     .me-fi {
         /* height: 47.5em; */
-        height: 25.5%;
+        height: 33%;
         text-align: center;
     }
 
@@ -353,12 +373,17 @@ main>div:nth-of-type(2) img {
     }
 
 
-    /* concept */
+    /* structure */
 
     .con>section:nth-of-type(1) {
         display: flex;
         flex-direction: row;
         padding: 18em 6em 0 17em;
+        gap: 2em;
+    }
+
+    .con>section:nth-of-type(1) div:nth-of-type(1) {
+        max-width: 50%;
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) h2 {
@@ -367,56 +392,77 @@ main>div:nth-of-type(2) img {
 
     .con>section:nth-of-type(1) div:nth-of-type(1) p {
         font-size: 1em;
+    }
+
+    .con>section:nth-of-type(1) div:nth-of-type(1) p:nth-of-type(2) {
         padding-bottom: 2em;
     }
 
-    .con>section:nth-of-type(1) div:nth-of-type(1) {
-        max-width: 50%;
-    }
 
-    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(1) {
-        max-height: 20em;
-    }
-
-    .con>section:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2) {
-        max-height: 13em;
-    }
-
-
-    /* user journey */
+    /* semantics */
 
     .timeline-right>section:nth-of-type(1) {
         padding: 4em 6em 0 18em;
+        display: flex;
+        flex-direction: column;
     }
 
     .timeline-right>section:nth-of-type(1) h2 {
-        font-size: 2.4em;
         color: white;
+        font-size: 2.4em;
+    }
+
+    .timeline-right>section:nth-of-type(1) div {
+        display: flex;
+        gap: 2em;
+    }
+    
+    .timeline-right>section:nth-of-type(1) div p {
+        font-family: "century-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+        color: white;
+        padding: .5em 0 0;
+    }
+    
+    .timeline-right>section:nth-of-type(1) video:nth-of-type(1) {
+        display: none;
+    }
+
+    .timeline-right>section:nth-of-type(1) video:nth-of-type(2) {
+        width: 100%;
+        display: block;
+        border-radius: .5em;
+        margin-top: 2em;
     }
 
 
-    /* user requirements */
+    /* accessibility */
 
     .timeline-right>section:nth-of-type(2) {
-        padding: 4em 6em 0 18em;
+        padding: 6em 6em 0 18em;
+        display: flex;
+        gap: 2em;
     }
 
-    .timeline-right>section:nth-of-type(2) h2 {
+    .timeline-right>section:nth-of-type(2) div h2 {
         font-size: 2.4em;
         color: white;
     }
 
-    .timeline-right>section:nth-of-type(2)>div {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
+    .timeline-right>section:nth-of-type(2) div p {
+        font-size: 1em;
+        color: white;
     }
 
-    .timeline-right>section:nth-of-type(2)>div div p {
-        padding-bottom: 1em;
+    .timeline-right>section:nth-of-type(2) video {
+        width: 50%;
+        margin: 0;
     }
 
-    /* wireframes & wireflow */
+
+    /* responsiveness */
 
     .timeline-right>section:nth-of-type(3) {
         padding: 0 6em 0 18em;
@@ -429,57 +475,68 @@ main>div:nth-of-type(2) img {
         margin: 0;
     }
 
-    .timeline-right>section:nth-of-type(3) img:nth-of-type(1) {
-        display: none;
+    .timeline-right>section:nth-of-type(3) div {
+        display: flex;
+        gap: 2em;
     }
 
-    .timeline-right>section:nth-of-type(3) img:nth-of-type(2) {
-        width: 100%;
-        height: auto;
-        padding: 1.5em 0;
-        display: inline;
-    }
-
-    .timeline-right>section:nth-of-type(3) p {
+    .timeline-right>section:nth-of-type(3) div p {
         font-size: 1em;
         color: white;
+        padding-top: .5em;
     }
 
-    .timeline-right>section:nth-of-type(3) p:nth-of-type(1) {
-        padding-top: .8em;
+    .timeline-right>section:nth-of-type(3) video {
+        margin-top: 2em;
     }
 
 
-    /* final product */
-
-    .timeline-right>img:nth-of-type(1) {
-        display: none;
-    }
-
-    .timeline-right>img:nth-of-type(2) {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+    /* animation */
 
     .timeline-right>section:nth-of-type(4) {
-        padding: 0 6em 4em 18em;
+        padding: 6em 6em 0 18em;
+        display: flex;
+        gap: 2em;
     }
 
-    .timeline-right>section:nth-of-type(4) h2 {
+    .timeline-right>section:nth-of-type(4) div h2 {
         font-size: 2.4em;
         color: white;
-    }
-
-    .timeline-right>section:nth-of-type(4) div {
-        display: flex;
-        gap: 3em;
     }
 
     .timeline-right>section:nth-of-type(4) div p {
         font-size: 1em;
         color: white;
-        padding-top: .8em;
+    }
+
+    .timeline-right>section:nth-of-type(4) video {
+        width: 50%;
+        margin: 0;
+    }
+
+
+    /* quricks */
+
+    .timeline-right>section:nth-of-type(5) {
+        padding: 0 6em 0 18em;
+        display: flex;
+        gap: 2em;
+    }
+
+    .timeline-right>section:nth-of-type(5) div h2 {
+        font-size: 2.4em;
+        color: white;
+    }
+
+    .timeline-right>section:nth-of-type(5) div p {
+        font-size: 1em;
+        color: white;
+    }
+
+    .timeline-right>section:nth-of-type(5) video {
+        width: 50%;
+        margin: 0;
+        order: -1;
     }
 
 
