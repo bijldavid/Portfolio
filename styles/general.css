@@ -43,11 +43,15 @@ font-size: .85em;
     --color-broodtext: #8AC6D0;
     --color-alttext: #204E4B;
     --color-footertext: #BEBEBE;
+    --color-codetext: #FFF5BF;
 
     /* -----backgrounds------ */
     --color-background1: #0A2A2F;
     --color-background2: #071E22;
+    --color-background-tonik: #57A4B1;
     --color-background-lockin: #F41746;
+    --color-background-codetag: rgba(0, 0, 0, 0.3);
+
     --color-line: #1B393E;
 
     /* -----fill------ */
@@ -84,6 +88,7 @@ h2 {
 
 p {
     letter-spacing: .3px;
+    line-height: 1.5em;
 }
 
 ul {
@@ -94,6 +99,14 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+code {
+    background-color: var(--color-background-codetag);
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2px 3px;
+    color: var(--color-codetext);
 }
 
 .line {
