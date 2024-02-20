@@ -255,6 +255,49 @@ main>img:nth-of-type(2) {
     border-radius: .5em;
 }
 
+
+/* TONIK MOCKUP */
+
+main>div:nth-of-type(2) {
+    margin-top: 3em;
+    position: relative;
+}
+
+main>div:nth-of-type(2) img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main>div:nth-of-type(2) a {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .7em 3em .7em 1.6em;
+    border: solid 1.5px white;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: white;
+}
+
+main>div:nth-of-type(2) a:after {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/general/Asset-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    right: 1em;
+    top: 50%;
+    transform: translate(-50%, -40%);
+}
+
+
 /* GENERAL */
 
 .line {
@@ -279,7 +322,7 @@ main>img:nth-of-type(2) {
 
     .timeline-left {
         position: absolute;
-        height: 83%;
+        height: 91.5%;
         top: 0;
         border-left: 3px solid transparent;
         border-image: repeating-linear-gradient(to bottom,
@@ -293,20 +336,20 @@ main>img:nth-of-type(2) {
 
     .research {
         /* height: 91.5em; */
-        height: 53.5%;
+        height: 48.5%;
         text-align: center;
     }
 
 
     .me-fi {
         /* height: 47.5em; */
-        height: 33%;
+        height: 39.5%;
         text-align: center;
     }
 
     .hi-fi {
         /* height: 48em; */
-        height: 25.5%;
+        height: 12%;
         text-align: center;
     }
 
@@ -537,6 +580,24 @@ main>img:nth-of-type(2) {
         width: 50%;
         margin: 0;
         order: -1;
+    }
+
+    
+    /* mockups */
+
+    main>div:nth-of-type(2) {
+        margin-top: 6em;
+    }
+    
+    main>div:nth-of-type(2) a {
+        bottom: 25%;
+        border: solid 2px white;
+        font-size: 1.2em;
+    }
+    
+    main>div:nth-of-type(2) a:after {
+        width: 13px;
+        height: 13px;
     }
 
 
