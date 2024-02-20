@@ -658,7 +658,7 @@ main>div:nth-of-type(2) a:after {
 
     .con>section:nth-of-type(1) {
         padding: 18em 13em 0 25em;
-        gap: 2em;
+        gap: 3em;
     }
 
 
@@ -670,7 +670,7 @@ main>div:nth-of-type(2) a:after {
     }
 
     .timeline-right>section:nth-of-type(1) div {
-        gap: 2em;
+        gap: 3em;
     }
 
 
@@ -678,7 +678,7 @@ main>div:nth-of-type(2) a:after {
 
     .timeline-right>section:nth-of-type(2) {
         padding: 6em 13em 0 25em;
-        gap: 2em;
+        gap: 3em;
     }
 
 
@@ -689,7 +689,7 @@ main>div:nth-of-type(2) a:after {
     }
 
     .timeline-right>section:nth-of-type(3) div {
-        gap: 2em;
+        gap: 3em;
     }
 
 
@@ -697,7 +697,7 @@ main>div:nth-of-type(2) a:after {
 
     .timeline-right>section:nth-of-type(4) {
         padding: 6em 13em 0 25em;
-        gap: 2em;
+        gap: 3em;
     }
 
 
@@ -705,7 +705,7 @@ main>div:nth-of-type(2) a:after {
 
     .timeline-right>section:nth-of-type(5) {
         padding: 0 13em 0 25em;
-        gap: 2em;
+        gap: 3em;
     }
 
     
