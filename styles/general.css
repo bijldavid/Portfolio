@@ -105,7 +105,7 @@ code {
     background-color: var(--color-background-codetag);
     border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 2px 3px;
+    padding: 1px 3px;
     color: var(--color-codetext);
 }
 
