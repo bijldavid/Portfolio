@@ -649,7 +649,7 @@ main>div:nth-of-type(2) a:after {
     /* float */
 
     .lockin-float {
-        padding: 6em; 
+        padding: 6em 13em; 
         top: -19em;
     }
 
