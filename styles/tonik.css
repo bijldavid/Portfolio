@@ -421,7 +421,7 @@ main>div:nth-of-type(2) a:after {
     .con>section:nth-of-type(1) {
         display: flex;
         flex-direction: row;
-        padding: 18em 6em 0 17em;
+        padding: 18em 6em 0 18em;
         gap: 2em;
     }
 
@@ -611,4 +611,114 @@ main>div:nth-of-type(2) a:after {
         margin: 4em 6em 4em 18em;
     }
 
+}
+
+
+
+
+
+/*************************************************************
+==========================BIGGER=============================
+*************************************************************/
+
+@media (min-width: 1650px) {
+
+    .timeline-left {
+        height: 91.5%;
+        margin: 17.8em 0 0 6em;
+    }
+
+    .research {
+        /* height: 91.5em; */
+        height: 48.5%;
+    }
+
+
+    .me-fi {
+        /* height: 47.5em; */
+        height: 39.5%;
+    }
+
+    .hi-fi {
+        /* height: 48em; */
+        height: 12%;
+    }
+
+
+
+    /* float */
+
+    .lockin-float {
+        padding: 6em; 
+        top: -19em;
+    }
+
+
+    /* structure */
+
+    .con>section:nth-of-type(1) {
+        padding: 18em 13em 0 25em;
+        gap: 2em;
+    }
+
+
+
+    /* semantics */
+
+    .timeline-right>section:nth-of-type(1) {
+        padding: 4em 13em 0 25em;
+    }
+
+    .timeline-right>section:nth-of-type(1) div {
+        gap: 2em;
+    }
+
+
+    /* accessibility */
+
+    .timeline-right>section:nth-of-type(2) {
+        padding: 6em 13em 0 25em;
+        gap: 2em;
+    }
+
+
+    /* responsiveness */
+
+    .timeline-right>section:nth-of-type(3) {
+        padding: 0 13em 0 25em;
+    }
+
+    .timeline-right>section:nth-of-type(3) div {
+        gap: 2em;
+    }
+
+
+    /* animation */
+
+    .timeline-right>section:nth-of-type(4) {
+        padding: 6em 13em 0 25em;
+        gap: 2em;
+    }
+
+
+    /* quircks */
+
+    .timeline-right>section:nth-of-type(5) {
+        padding: 0 13em 0 25em;
+        gap: 2em;
+    }
+
+    
+    /* mockups */
+
+    main>div:nth-of-type(2) {
+        margin-top: 6em;
+    }
+
+
+    /* general */
+
+    .line {
+        margin: 4em 13em 4em 25em;
+    }
 }
