@@ -400,7 +400,7 @@ main>div:nth-of-type(2) a:after {
     }
 
     .lockin-float>section {
-        padding: 3em 6em 6em;
+        padding: 3vw 6vw 6vw;
     }
 
     .lockin-float>section div {
@@ -408,7 +408,7 @@ main>div:nth-of-type(2) a:after {
     }
 
     .lockin-float>section h1 {
-        font-size: clamp(1em, 1.7vw, 1em);
+        font-size: clamp(.3em, 1.7vw, 1em);
     }
 
     .lockin-float>section h2 {

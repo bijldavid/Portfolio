@@ -324,36 +324,36 @@ main>ul:nth-of-type(1) li img {
     }
 
     .parallax img:nth-of-type(2) {
-        --pparallax-speed: -12;
+        --parallax-speed: -12;
         z-index: 1;
     }
 
     .parallax img:nth-of-type(3) {
-        --pparallax-speed: -8;
+        --parallax-speed: -8;
         position: absolute;
         z-index: 2;
     }
 
     .parallax img:nth-of-type(4) {
-        --pparallax-speed: -4;
+        --parallax-speed: -4;
         position: absolute;
         z-index: 3;
     }
 
     .parallax img:nth-of-type(5) {
-        --pparallax-speed: -2;
+        --parallax-speed: -2;
         position: absolute;
         z-index: 4;
     }
 
     .parallax img:nth-of-type(6) {
-        --pparallax-speed: -1;
+        --parallax-speed: -1;
         position: absolute;
         z-index: 5;
     }
 
     .parallax img:nth-of-type(7) {
-        --pparallax-speed: 0;
+        --parallax-speed: 0;
         z-index: 6;
     }
 
