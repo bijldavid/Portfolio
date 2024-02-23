@@ -233,14 +233,22 @@ main>img:nth-of-type(3) {
 /* FINAL PRODUCT */
 
 .timeline-right>section:nth-of-type(5) {
-    padding: 2em 1.5em 2em;
+    position: relative;
 }
 
-.timeline-right>section:nth-of-type(5) h2 {
+.timeline-right>section:nth-of-type(5) div {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(0, -50%);
+    padding: 1.5em;
+}
+
+.timeline-right>section:nth-of-type(5) div h2 {
     color: white;
 }
 
-.timeline-right>section:nth-of-type(5) p {
+.timeline-right>section:nth-of-type(5) div p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -249,25 +257,8 @@ main>img:nth-of-type(3) {
     padding: .5em 0 0;
 }
 
-
-/* TONIK MOCKUP */
-
-main>div:nth-of-type(2) {
-    margin-top: 3em;
+.timeline-right>section:nth-of-type(5) a {
     position: relative;
-}
-
-main>div:nth-of-type(2) img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-main>div:nth-of-type(2) a {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: .7em 3em .7em 1.6em;
     border: solid 1.5px white;
     font-family: "century-gothic", sans-serif;
@@ -275,9 +266,12 @@ main>div:nth-of-type(2) a {
     font-style: normal;
     font-size: .75em;
     color: white;
+    display: block;
+    margin-top: 1em;
+    width: max-content;
 }
 
-main>div:nth-of-type(2) a:after {
+.timeline-right>section:nth-of-type(5) a:after {
     position: absolute;
     display: block;
     width: 10px;
@@ -289,6 +283,15 @@ main>div:nth-of-type(2) a:after {
     right: 1em;
     top: 50%;
     transform: translate(-50%, -40%);
+}
+
+.timeline-right>section:nth-of-type(5) img:nth-of-type(1) {
+    display: none;
+}
+
+.timeline-right>section:nth-of-type(5) img:nth-of-type(2) {
+    width: 100%;
+    display: block;
 }
 
 
@@ -316,7 +319,7 @@ main>div:nth-of-type(2) a:after {
 
     .timeline-left {
         position: absolute;
-        height: 92%;
+        height: 76%;
         top: 0;
         border-left: 3px solid transparent;
         border-image: repeating-linear-gradient(to bottom,
@@ -330,20 +333,20 @@ main>div:nth-of-type(2) a:after {
 
     .research {
         /* height: 91.5em; */
-        height: 13.7%;
+        height: 14%;
         text-align: center;
     }
 
 
     .me-fi {
         /* height: 47.5em; */
-        height: 78.5%;
+        height: 80.3%;
         text-align: center;
     }
 
     .hi-fi {
         /* height: 48em; */
-        height: 7.8%;
+        height: 5.7%;
         text-align: center;
     }
 
@@ -454,7 +457,7 @@ main>div:nth-of-type(2) a:after {
         display: flex;
         gap: 2em;
     }
-    
+
     .timeline-right>section:nth-of-type(1) div p {
         font-family: "century-gothic", sans-serif;
         font-weight: 400;
@@ -463,13 +466,12 @@ main>div:nth-of-type(2) a:after {
         color: white;
         padding: .5em 0 0;
     }
-    
+
     .timeline-right>section:nth-of-type(1) div:nth-of-type(2) {
-        display: flex;
         gap: 2em;
         margin-top: 2em;
     }
-    
+
     .timeline-right>section:nth-of-type(1) div:nth-of-type(2) img {
         width: calc((100% - 2em) / 3);
         border-radius: 10px;
@@ -555,40 +557,49 @@ main>div:nth-of-type(2) a:after {
     /* final product */
 
     .timeline-right>section:nth-of-type(5) {
-        padding: 0 6em 0 18em;
-    }
-
-    .timeline-right>section:nth-of-type(5) h2 {
-        font-size: 2.4em;
-        color: white;
-    }
-
+        position: relative;
+    } 
+    
     .timeline-right>section:nth-of-type(5) div {
-        display: flex;
-        gap: 2em;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        padding: 0 6em 0 18em;
+        max-width: 60%;
     }
-
+    
+    .timeline-right>section:nth-of-type(5) div h2 {
+        font-size: 2.4em;
+    }
+    
     .timeline-right>section:nth-of-type(5) div p {
+        font-family: "century-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
         font-size: 1em;
         color: white;
-    }
-
-    
-    /* mockups */
-
-    main>div:nth-of-type(2) {
-        margin-top: 6em;
+        padding: .5em 0 0;
     }
     
-    main>div:nth-of-type(2) a {
+    .timeline-right>section:nth-of-type(5) a {
         bottom: 25%;
         border: solid 2px white;
         font-size: 1.2em;
     }
     
-    main>div:nth-of-type(2) a:after {
+    .timeline-right>section:nth-of-type(5) a:after {
         width: 13px;
         height: 13px;
+    }
+    
+    .timeline-right>section:nth-of-type(5) img:nth-of-type(1) {
+        width: 100%;
+        display: block;
+    }
+    
+    .timeline-right>section:nth-of-type(5) img:nth-of-type(2) {
+        display: none;
     }
 
 
@@ -615,24 +626,24 @@ main>div:nth-of-type(2) a:after {
 @media (min-width: 1650px) {
 
     .timeline-left {
-        height: 91.5%;
+        height: 73.5%;
         margin: 17.8em 0 0 6em;
     }
 
     .research {
         /* height: 91.5em; */
-        height: 48.5%;
+        height: 14.4%;
     }
 
 
     .me-fi {
         /* height: 47.5em; */
-        height: 39.5%;
+        height: 80.7%;
     }
 
     .hi-fi {
         /* height: 48em; */
-        height: 12%;
+        height: 4.9%;
     }
 
 
@@ -657,7 +668,7 @@ main>div:nth-of-type(2) a:after {
     /* float */
 
     .float {
-        padding: 6em 13em; 
+        padding: 6em 13em;
         top: -19em;
     }
 
@@ -711,16 +722,9 @@ main>div:nth-of-type(2) a:after {
 
     /* final product */
 
-    .timeline-right>section:nth-of-type(5) {
+    .timeline-right>section:nth-of-type(5) div {
         padding: 0 13em 0 25em;
-        gap: 3em;
-    }
-
-    
-    /* mockups */
-
-    main>div:nth-of-type(2) {
-        margin-top: 6em;
+        max-width: 65%;
     }
 
 
