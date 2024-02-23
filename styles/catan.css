@@ -707,10 +707,6 @@ main>img:nth-of-type(3) {
         padding: 6em 13em 0 25em;
     }
 
-    .timeline-right>section:nth-of-type(3) div {
-        gap: 3em;
-    }
-
 
     /* problem solving */
 
