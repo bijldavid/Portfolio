@@ -50,6 +50,8 @@ font-size: .85em;
     --color-background2: #071E22;
     --color-background-tonik: #57A4B1;
     --color-background-lockin: #F41746;
+    --color-background-catan: #FFAF25;
+
     --color-background-codetag: rgba(0, 0, 0, 0.3);
 
     --color-line: #1B393E;
@@ -347,5 +349,26 @@ footer nav img {
     footer {
         padding: 1.5em 6em;
         align-items: center;
+    }
+}
+
+
+/*************************************************************
+==========================BIGGER=============================
+*************************************************************/
+
+@media (min-width: 1650px) {
+
+    /* header */
+
+    header {
+    padding: 1em 13em;
+    }
+
+
+    /* footer */
+
+    footer {
+    padding: 1.5em 13em;
     }
 }

@@ -21,19 +21,19 @@ main>img:nth-of-type(3) {
     position: relative;
 }
 
-.lockin-float {
+.float {
     position: absolute;
     width: 100%;
     top: -12em;
     padding: 1.5em;
 }
 
-.lockin-float>section {
+.float>section {
     background-color: var(--color-background1);
     padding: 1.5em 1.5em 3em;
 }
 
-.lockin-float>section h1 {
+.float>section h1 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -41,11 +41,11 @@ main>img:nth-of-type(3) {
     color: var(--color-alttext);
 }
 
-.lockin-float>section div {
+.float>section div {
     gap: 3em;
 }
 
-.lockin-float>section div section h3 {
+.float>section div section h3 {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -54,7 +54,7 @@ main>img:nth-of-type(3) {
     padding: 1.5em 0 .5em;
 }
 
-.lockin-float>section div section p {
+.float>section div section p {
     font-family: "century-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -392,34 +392,34 @@ main>div:nth-of-type(2) a:after {
         display: none;
     }
 
-    .lockin-float {
+    .float {
         position: absolute;
         min-width: 100%;
         padding: 6em;
         top: -19em;
     }
 
-    .lockin-float>section {
+    .float>section {
         padding: 3vw 6vw 6vw;
     }
 
-    .lockin-float>section div {
+    .float>section div {
         display: flex;
     }
 
-    .lockin-float>section h1 {
+    .float>section h1 {
         font-size: clamp(.3em, 1.7vw, 1em);
     }
 
-    .lockin-float>section h2 {
+    .float>section h2 {
         font-size: clamp(1.6em, 4vw, 2.4em);
     }
 
-    .lockin-float>section div section h3 {
+    .float>section div section h3 {
         font-size: clamp(.85em, 1.7vw, 1.2em);
     }
 
-    .lockin-float>section div section p {
+    .float>section div section p {
         font-size: clamp(.3em, 1.3vw, 1em);
     }
 
@@ -673,7 +673,7 @@ main>div:nth-of-type(2) a:after {
 
     /* float */
 
-    .lockin-float {
+    .float {
         padding: 6em 13em; 
         top: -19em;
     }

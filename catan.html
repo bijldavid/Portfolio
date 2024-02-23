@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="david bijl">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio homepage</title>
+
+    <link href="./styles/general.css" rel="stylesheet">
+    <link href="./styles/catan.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/tpk7blo.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <p>DAVID BIJL</p>
+        </a>
+        <div class="hamburger">
+            <a id="hamburger-toggle" class="hamburger-toggle">
+                <span class="hamburger-toggle-bar hamburger-toggle-bar--top"></span>
+                <span class="hamburger-toggle-bar hamburger-toggle-bar--middle"></span>
+                <span class="hamburger-toggle-bar hamburger-toggle-bar--bottom"></span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="tonik.html">My work</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="images/catan/bgbannercatan-phone.png">
+        <img src="images/catan/bgbannercatan-desktop.png">
+        <img src="images/catan/bgbannercatan-bigger.png">
+        <div class="timeline">
+            <div class="timeline-right">
+                <div class="con">
+                    <div class="float">
+                        <section>
+                            <h1>Case study</h1>
+                            <h2>CATAN</h2>
+                            <div>
+                                <section>
+                                    <h3>JAVASCRIPT</h3>
+                                    <p>Javascript is one of the most written code languages out there and plays a big
+                                        part in web design as we know it today. In this case study I bring you along on
+                                        my first ever javascript project. This project is all about experimenting with
+                                        javascript in conjunction with HTML and CSS. It will highlight my understanding
+                                        of the various datatypes, variables, functions, loops, if-statements and more!
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>Briefing</h3>
+                                    <p>The task for this project was to create or recreate an existing game, utilizing
+                                        only JavaScript, HTML, and CSS—simple enough. With my limited prior experience
+                                        in JavaScript, I ambitiously selected the board game, Catan. In hindsight, this
+                                        was never achievable for a beginner but was a fun and insightful project
+                                        nonetheless.
+                                    </p>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+
+
+                    <section>
+                        <div>
+                            <h2>THE GAME</h2>
+                            <p>“Catan” is a popular strategy board game where players compete to earn victory points,
+                                first person to reach 10 points wins. In Catan, players gather resources: wood, brick,
+                                grain, ore, and sheep to build roads, settlements and cities. Settlements and cities
+                                earn them victory points. There's some more nuance to it but this is essentially what it
+                                boils down to. The tricky part of this project was translating the different items and
+                                rulesets into an interactive interface.</p>
+                        </div>
+                        <div>
+                            <img src="images/catan/catanmockup.png">
+                        </div>
+                    </section>
+                </div>
+
+                <section>
+                    <h2>THE BOARD</h2>
+                    <div>
+                        <p>
+                            The board in Catan consists of 19 hexagonal tiles. Every tile has an assigned resource. Every
+                            corner of every tile is a potential settlement spot. Settlements are connected by roads.
+                            This means that every corner of every tile needed to be clickable.
+                        </p>
+                        <p>
+                            And on top of that, every space between every settlement needed a clickable road. Which
+                            resulted in …-grid. Put the roads, settlements and tiles together and you end up with this
+                            board!
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/catan/boardnoroads.png">
+                        <img src="images/catan/roadsnoboard.png">
+                        <img src="images/catan/roadsandboard.png">
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <h2>RANDOMIZER</h2>
+                        <p>Truth be told, the randomiser wasn't a necessity for the game; rather, it served as a fun
+                            challenge to explore JavaScript. That said, given that every game of Catan begins with a
+                            randomly generated board, there's some value in implementing it.
+                        </p>
+
+                        <p>The randomization process involved creating a function that utilized <code>Math.random</code>
+                            to shuffle
+                            the styles and then reassign them to the tiles.
+                        </p>
+                    </div>
+                    <video muted="muted" autoplay="autoplay" loop playsinline>
+                        <source src="videos/randomize.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+
+                <section>
+                    <div>
+                        <h2>ROADS AND SETTLES</h2>
+                        <p>Creating the road and settlement grid was just the beginning – they had to be interactive
+                            too! During
+                            set up in a game of Catan, players first choose a settlement spot and then place a road
+                            adjacent to
+                            their settlement pointing either up left or right. This meant the roads had to be invisible
+                            until a
+                            player built their settlement. Once settled, only the three adjacent roads should appear
+                            into view.
+                        </p>
+                    </div>
+                    <video muted="muted" autoplay="autoplay" loop playsinline>
+                        <source src="videos/roadsandsettles.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+                <section>
+                    <h2>PROBLEM SOLVING</h2>
+                    <div>
+                        <p>
+                            Working on this project made me realise just how much work and effort goes into creating
+                            seemingly 'simple' games like Catan. It took a lot of problem solving and back tracking to
+                            create something even remotely functional.
+                        </p>
+                        <p>
+                            For example, once something is invisible, you don't want it clickable anymore. And when you
+                            click something, it should stay active. Randomising the board should remove all active
+                            settles
+                            and roads. The list goes on… in the end, I only really managed to create the first few steps
+                            in
+                            the game.
+                        </p>
+                    </div>
+                    <video muted="muted" autoplay="autoplay" loop playsinline>
+                        <source src="videos/problemsolving.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+                <div class="line"></div>
+
+                <section>
+                    <h2>FINAL PRODUCT</h2>
+                    <div>
+                        <p>
+                            Like I mentioned above, this was about the extent of what I was capable of creating within
+                            the
+                            span of this project, and it's barely scratching the surface of what the full game is like.
+                        </p>
+                        <p>
+                            Sure, it's been a learning curve, and I've picked up quite a bit along the way. But seeing
+                            the
+                            potential of JavaScript makes me excited to learn more.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="timeline-left">
+                <div class="research">
+                    <div>
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="me-fi">
+                    <div>
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="hi-fi">
+                    <div>
+                        <p>DETAILS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="images/tonik/finalproducttonik.png">
+            <a href="https://bijldavid.github.io/Tonik/" target="_blank">View full project</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 David Bijl</p>
+        <nav>
+            <a href="#"><img src="images/general/linkedinicon.png"></a></li>
+            <a href="#"><img src="images/general/gitgubicon.png"></a></li>
+        </nav>
+    </footer>
+    <script defer src="index.js"></script>
+</body>
