@@ -53,6 +53,8 @@ font-size: .85em;
     --color-background-catan: #FFAF25;
 
     --color-background-codetag: rgba(0, 0, 0, 0.3);
+    --color-background-radialbutton: rgba(165, 243, 255, 0.1);
+    --color-background-radialbutton-active: rgba(255, 255, 255, 0.3);
 
     --color-line: #1B393E;
 
