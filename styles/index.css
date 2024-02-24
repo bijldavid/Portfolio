@@ -94,9 +94,6 @@ main>ul:nth-of-type(1) li h3:nth-of-type(2) {
 }
 
 main>ul:nth-of-type(1) li p {
-    font-family: "century-gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: .75em;
     color: var(--color-broodtext);
     padding-top: 8px;
@@ -110,14 +107,18 @@ main>ul:nth-of-type(1) li a {
     color: var(--color-htext2);
     border: solid;
     padding: .7em 0;
-    margin: 2em 0 5em;
+    margin: 1.5em 0 5em;
     display: block;
     text-align: center;
 }
 
-main>ul:nth-of-type(1) li img {
-    max-width: 100%;
+main>ul:nth-of-type(1) li>div:nth-of-type(2) {
+    width: 100%;
     order: -1;
+}
+
+main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
+    max-width: 100%;
 }
 
 
@@ -196,17 +197,28 @@ main>ul:nth-of-type(1) li img {
 }
 
 .about-me section p {
-    font-family: "century-gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: .75em;
     color: var(--color-broodtext);
     padding-top: 8px;
 }
 
+.about-me section a {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .85em;
+    border: solid;
+    padding: .7em 0;
+    display: block;
+    text-align: center;
+    border: solid var(--color-htext2);
+    color: var(--color-htext2);
+    margin-top: 1.5em;
+}
+
 .about-me section>img {
-    padding: 2em;
-    width: 80%;
+    padding: 4em 1em 1em 1em;
+    width: 90%;
     height: auto;
 }
 
@@ -227,7 +239,7 @@ main>ul:nth-of-type(1) li img {
 /* ======= */
 
 .contact {
-    padding: 1.5em;
+    padding: 3em 1.5em 1.5em 1.5em;
 }
 
 .background {
@@ -265,15 +277,19 @@ main>ul:nth-of-type(1) li img {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: solid var(--color-htext2) 2px;
+    width: 140px;
+    height: 40px;
+    gap: 10px;
+}
+
+.contact-buttons a p {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: .85em;
-    color: var(--color-broodtext);
-    border: solid var(--color-broodtext) 2px;
-    width: 140px;
-    height: 40px;
-    gap: 10px;
+    color: var(--color-htext2);
 }
 
 .contact a:nth-of-type(1) img {
@@ -394,9 +410,57 @@ main>ul:nth-of-type(1) li img {
         gap: 5em;
     }
 
-    main>ul:nth-of-type(1) li img {
+    main>ul:nth-of-type(1) li>div:nth-of-type(2) {
         order: 0;
-        max-width: 50%;
+        width: 60%;
+        position: relative;
+    }
+
+    /* hover */
+
+    main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
+        display: none;
+    }
+    
+    main>ul:nth-of-type(1) li>div:nth-of-type(2):hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+        z-index: 1;
+    }
+    
+    main>ul:nth-of-type(1) li>div:nth-of-type(2):hover div {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        z-index: 2;
+        top: 1.5em;
+        left: 1.5em;
+        gap: .5em;
+    }
+    
+    main>ul:nth-of-type(1) li>div:nth-of-type(2):hover div img {
+        height: 1.8vw;
+        width: auto;
+        display: block;
+    }
+    
+    main>ul:nth-of-type(1) li>div:nth-of-type(2):hover div p {
+        padding: 0;
+        color: white;
+        font-weight: 700;
+        font-size: 1.5vw;
+    }
+    
+    
+    
+
+    main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
+        max-width: 100%;
         object-fit: contain;
     }
 
@@ -440,6 +504,30 @@ main>ul:nth-of-type(1) li img {
 
     .about-me section {
         padding: 0 6em 0 3em;
+        display: flex;
+        gap: 1em;
+    }
+
+    .about-me section div a {
+        width: max-content;
+        padding: .8em 3.5em .8em 2em;
+        margin-bottom: 0;
+        font-size: 1em;
+        position: relative;
+    }
+
+    .about-me section div a:after {
+        position: absolute;
+        display: block;
+        width: 11px;
+        height: 11px;
+        background-image: url('../images/homepage/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        right: 1.5em;
+        top: 50%;
+        transform: translate(-50%, -40%);
     }
 
     .about-me>img:nth-of-type(1) {
@@ -453,15 +541,10 @@ main>ul:nth-of-type(1) li img {
         height: auto;
     }
 
-    .about-me section {
-        display: flex;
-        gap: 1em;
-    }
-
     .about-me section>img {
         width: 50%;
         height: auto;
-        padding: 3em;
+        padding: 3em 3em 3em 4em;
         order: -1;
         object-fit: contain;
     }
@@ -495,7 +578,7 @@ main>ul:nth-of-type(1) li img {
         flex-direction: row;
         text-align: start;
         justify-content: space-between;
-        height: 40vw;
+        height: 33vw;
     }
 
     .left-con {
@@ -506,12 +589,12 @@ main>ul:nth-of-type(1) li img {
     }
 
     .left-con h2 {
-        font-size: 6vw;
+        font-size: 5vw;
         line-height: 1em;
     }
 
     .left-con h3 {
-        font-size: 1.7vw;
+        font-size: 1.5vw;
     }
 
     .right-con {
@@ -534,6 +617,60 @@ main>ul:nth-of-type(1) li img {
         font-size: 1em;
         width: 170px;
         height: 45px;
+    }
+
+}
+
+
+/*************************************************************
+==========================BIGGER=============================
+*************************************************************/
+
+@media (min-width: 1650px) {
+
+    .parallax section {
+        padding-left: 13em;
+    }
+
+
+    /* My work */
+
+    main>h2 {
+        padding: 2.5em 207px 0;
+    }
+
+    main>.line {
+        margin: .5em 13em 1.3em;
+    }
+
+    main>ul:nth-of-type(1) {
+        padding: 1em 0 4em 0;
+    }
+
+    main>ul:nth-of-type(1) li {
+        padding: 2em 13em;
+    }
+
+    main>ul:nth-of-type(1) li a {
+        padding: .8em 3.5em .8em 2em;
+    }
+
+
+    /* About */
+
+    .about-me section {
+        padding: 0 13em 0 3em;
+    }
+
+    .about-me section>img {
+        padding: 3em 3em 3em 6em;
+    }
+
+
+    /* contact */
+
+    .contact {
+        padding: 8em 13em 3em 19em;
     }
 
 }

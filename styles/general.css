@@ -93,6 +93,9 @@ h2 {
 p {
     letter-spacing: .3px;
     line-height: 1.5em;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 ul {
@@ -145,6 +148,7 @@ body.scroll-lock {
     display: block;
 }
 
+
 @keyframes parallax {
     to {
         transform: translateY(calc(var(--parallax-speed) * 200px));
@@ -162,6 +166,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em 1.5em;
+    background: linear-gradient(to bottom, rgba(7, 30, 34, 1), rgba(7, 30, 34, 0));
 }
 
 header a {
@@ -305,15 +310,15 @@ footer nav img {
     }
 
     header .hamburger {
-		display: none;
-	}
+        display: none;
+    }
 
     header nav {
-		position: static;
-		translate: 0 0;
-		background-color: transparent;
-		transition: none;
-	}
+        position: static;
+        translate: 0 0;
+        background-color: transparent;
+        transition: none;
+    }
 
     header a p {
         font-size: 2.4em;
@@ -321,29 +326,29 @@ footer nav img {
 
 
     header nav ul {
-		position: static;
-		display: flex;
-		gap: .5em
-	}
+        position: static;
+        display: flex;
+        gap: .5em
+    }
 
     header nav a {
-		color: var(--color-htext2);
+        color: var(--color-htext2);
         font-family: "century-gothic", sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 1em;
-		border: solid transparent;
-		padding: 1em 1.7em;
-		border-radius: 2.5em;
-		background-color: transparent;
-	}
+        border: solid transparent;
+        padding: 1em 1.7em;
+        border-radius: 2.5em;
+        background-color: transparent;
+    }
 
     header nav a:hover {
-		border: solid;
-		border-color: var(--color-htext2);
-		background-color: transparent;
-		color: var(--color-htext2);
-	}
+        border: solid;
+        border-color: var(--color-htext2);
+        background-color: transparent;
+        color: var(--color-htext2);
+    }
 
 
     /* footer */
@@ -364,13 +369,13 @@ footer nav img {
     /* header */
 
     header {
-    padding: 1em 13em;
+        padding: 1em 13em;
     }
 
 
     /* footer */
 
     footer {
-    padding: 1.5em 13em;
+        padding: 1.5em 13em;
     }
 }
