@@ -438,11 +438,11 @@ main>div:nth-of-type(2) a:after {
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) p:nth-of-type(2) {
@@ -460,7 +460,7 @@ main>div:nth-of-type(2) a:after {
 
     .timeline-right>section:nth-of-type(1) h2 {
         color: white;
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
     }
 
     .timeline-right>section:nth-of-type(1) div {
@@ -472,7 +472,7 @@ main>div:nth-of-type(2) a:after {
         font-family: "century-gothic", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         color: white;
         padding: .5em 0 0;
     }
@@ -498,12 +498,12 @@ main>div:nth-of-type(2) a:after {
     }
 
     .timeline-right>section:nth-of-type(2) div h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
     }
 
     .timeline-right>section:nth-of-type(2) div p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         color: white;
     }
 
@@ -520,7 +520,7 @@ main>div:nth-of-type(2) a:after {
     }
 
     .timeline-right>section:nth-of-type(3) h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
         padding: 0;
         margin: 0;
@@ -532,7 +532,7 @@ main>div:nth-of-type(2) a:after {
     }
 
     .timeline-right>section:nth-of-type(3) div p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         color: white;
         padding-top: .5em;
     }
@@ -551,12 +551,12 @@ main>div:nth-of-type(2) a:after {
     }
 
     .timeline-right>section:nth-of-type(4) div h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
     }
 
     .timeline-right>section:nth-of-type(4) div p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         color: white;
     }
 
@@ -575,12 +575,12 @@ main>div:nth-of-type(2) a:after {
     }
 
     .timeline-right>section:nth-of-type(5) div h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
     }
 
     .timeline-right>section:nth-of-type(5) div p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         color: white;
     }
 
@@ -600,7 +600,7 @@ main>div:nth-of-type(2) a:after {
     main>div:nth-of-type(2) a {
         bottom: 25%;
         border: solid 2px white;
-        font-size: 1.2em;
+        font-size: clamp(.85em, 1.7vw, 1.2em);
     }
     
     main>div:nth-of-type(2) a:after {
@@ -633,7 +633,7 @@ main>div:nth-of-type(2) a:after {
 
     .timeline-left {
         height: 91.5%;
-        margin: 17.8em 0 0 6em;
+        margin: 17.8em 0 0 13em;
     }
 
     .research {

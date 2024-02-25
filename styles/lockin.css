@@ -383,11 +383,15 @@ main>div:nth-of-type(2) img {
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
     }
 
     .con>section:nth-of-type(1) div:nth-of-type(1) p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
+    }
+
+    .con>section:nth-of-type(1) div:nth-of-type(1) p:nth-of-type(2) {
+        font-size: clamp(.3em, 1.3vw, 1em);
         padding-bottom: 2em;
     }
 
@@ -411,7 +415,7 @@ main>div:nth-of-type(2) img {
     }
 
     .timeline-right>section:nth-of-type(1) h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
     }
 
@@ -423,7 +427,7 @@ main>div:nth-of-type(2) img {
     }
 
     .timeline-right>section:nth-of-type(2) h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
     }
 
@@ -444,7 +448,7 @@ main>div:nth-of-type(2) img {
     }
 
     .timeline-right>section:nth-of-type(3) h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
         padding: 0;
         margin: 0;
@@ -462,7 +466,7 @@ main>div:nth-of-type(2) img {
     }
 
     .timeline-right>section:nth-of-type(3) p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         color: white;
     }
 
@@ -488,7 +492,7 @@ main>div:nth-of-type(2) img {
     }
 
     .timeline-right>section:nth-of-type(4) h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         color: white;
     }
 
@@ -498,7 +502,7 @@ main>div:nth-of-type(2) img {
     }
 
     .timeline-right>section:nth-of-type(4) div p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         color: white;
         padding-top: .8em;
     }
@@ -512,6 +516,87 @@ main>div:nth-of-type(2) img {
         height: 1.5px;
         background-color: var(--color-line);
         margin: 4em 6em 4em 18em;
+    }
+
+}
+
+
+/*************************************************************
+==========================BIGGER=============================
+*************************************************************/
+
+@media (min-width: 1650px) {
+
+    .timeline-left {
+        height: 91.5%;
+        margin: 17.8em 0 0 13em;
+    }
+
+    .research {
+        /* height: 91.5em; */
+        height: 49%;
+    }
+
+
+    .me-fi {
+        /* height: 47.5em; */
+        height: 25.5%;
+    }
+
+    .hi-fi {
+        /* height: 48em; */
+        height: 25.5%;
+    }
+
+
+    /* float */
+
+    .float {
+        padding: 6em 13em; 
+        top: -19em;
+    }
+
+
+    /* concept */
+
+    .con>section:nth-of-type(1) {
+        padding: 18em 13em 0 25em;
+        gap: 3em;
+    }
+
+
+    /* user journey */
+
+    .timeline-right>section:nth-of-type(1) {
+        padding: 4em 13em 0 25em;
+    }
+
+
+    /* user requirements */
+
+    .timeline-right>section:nth-of-type(2) {
+        padding: 4em 13em 0 25em;
+    }
+
+
+    /* wireframes & wireflow */
+
+    .timeline-right>section:nth-of-type(3) {
+        padding: 0 13em 0 25em;
+    }
+
+
+    /* final product */
+
+    .timeline-right>section:nth-of-type(4) {
+        padding: 0 13em 4em 25em;
+    }
+
+
+    /* general */
+
+    .line {
+        margin: 4em 13em 4em 25em;
     }
 
 }

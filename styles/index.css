@@ -121,6 +121,12 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
     max-width: 100%;
 }
 
+/* hover */
+
+main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
+    display: none;
+}
+
 
 /* =============== */
 /* INFINITE SLIDER */
@@ -390,7 +396,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
     /* My work */
 
     main>h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
         padding: 2.5em 95px 0;
     }
 
@@ -465,23 +471,23 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
     }
 
     main>ul:nth-of-type(1) li h3:nth-of-type(1) {
-        font-size: 1.2em;
+        font-size: clamp(.85em, 1.7vw, 1.2em);
         padding: 0;
     }
 
     main>ul:nth-of-type(1) li h3:nth-of-type(2) {
-        font-size: 1.2em;
+        font-size: clamp(.85em, 1.7vw, 1.2em);
     }
 
     main>ul:nth-of-type(1) li p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
     }
 
     main>ul:nth-of-type(1) li a {
         width: max-content;
         padding: .8em 3.5em .8em 2em;
         margin-bottom: 0;
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         position: relative;
     }
 
@@ -512,7 +518,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
         width: max-content;
         padding: .8em 3.5em .8em 2em;
         margin-bottom: 0;
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
         position: relative;
     }
 
@@ -550,15 +556,15 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
     }
 
     .about-me section h2 {
-        font-size: 2.4em;
+        font-size: clamp(1.6em, 4vw, 2.4em);
     }
 
     .about-me section h3 {
-        font-size: 1.2em;
+        font-size: clamp(.85em, 1.7vw, 1.2em);
     }
 
     .about-me section p {
-        font-size: 1em;
+        font-size: clamp(.3em, 1.3vw, 1em);
     }
 
 
