@@ -444,7 +444,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
     }
     
     main>ul:nth-of-type(1) li>div:nth-of-type(2):hover div img {
-        height: 1.8vw;
+        height: 1.5vw;
         width: auto;
         display: block;
     }
@@ -617,6 +617,14 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) img {
         font-size: 1em;
         width: 170px;
         height: 45px;
+    }
+
+    .contact-buttons a:nth-of-type(1) {
+        margin-left: -30px;
+    }
+
+    .contact-buttons a:nth-of-type(2) {
+        margin-right: -30px;
     }
 
 }
