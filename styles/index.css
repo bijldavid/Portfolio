@@ -321,6 +321,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
         z-index: 0;
         display: grid;
         margin-top: -90px;
+        width: 100%;
 
     }
 
@@ -343,6 +344,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
         height: auto;
         width: 100%;
         display: block;
+        overflow: hidden;
     }
 
     .parallax img:nth-of-type(2) {
@@ -396,7 +398,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
     /* My work */
 
     main>h2 {
-        font-size: clamp(1.6em, 4vw, 2.4em);
+        font-size: clamp(1.6em, 2.4vw, 3.5em);
         padding: 2.5em 95px 0;
     }
 
@@ -471,23 +473,23 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
     }
 
     main>ul:nth-of-type(1) li h3:nth-of-type(1) {
-        font-size: clamp(.85em, 1.7vw, 1.2em);
+        font-size: clamp(.85em, 1.2vw, 2em);
         padding: 0;
     }
 
     main>ul:nth-of-type(1) li h3:nth-of-type(2) {
-        font-size: clamp(.85em, 1.7vw, 1.2em);
+        font-size: clamp(.85em, 1.2vw, 2em);
     }
 
     main>ul:nth-of-type(1) li p {
-        font-size: clamp(.3em, 1.3vw, 1em);
+        font-size: clamp(.3em, 1vw, 1.8em);
     }
 
     main>ul:nth-of-type(1) li a {
         width: max-content;
         padding: .8em 3.5em .8em 2em;
         margin-bottom: 0;
-        font-size: clamp(.3em, 1.3vw, 1em);
+        font-size: clamp(.3em, 1vw, 1.8em);
         position: relative;
     }
 
@@ -518,7 +520,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
         width: max-content;
         padding: .8em 3.5em .8em 2em;
         margin-bottom: 0;
-        font-size: clamp(.3em, 1.3vw, 1em);
+        font-size: clamp(.3em, 1vw, 1.8em);
         position: relative;
     }
 
@@ -556,15 +558,15 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
     }
 
     .about-me section h2 {
-        font-size: clamp(1.6em, 4vw, 2.4em);
+        font-size: clamp(1.6em, 2.4vw, 3.5em);
     }
 
     .about-me section h3 {
-        font-size: clamp(.85em, 1.7vw, 1.2em);
+        font-size: clamp(.85em, 1.2vw, 2em);
     }
 
     .about-me section p {
-        font-size: clamp(.3em, 1.3vw, 1em);
+        font-size: clamp(.3em, 1vw, 1.8em);
     }
 
 
@@ -620,7 +622,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
     }
 
     .contact-buttons a {
-        font-size: 1em;
+        font-size: clamp(.8em, 1vw, 1.8em);
         width: 170px;
         height: 45px;
     }
@@ -641,6 +643,10 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
 *************************************************************/
 
 @media (min-width: 1650px) {
+
+    .parallax {
+        margin-top: -118px;
+    }
 
     .parallax section {
         padding-left: 13em;
