@@ -45,7 +45,8 @@
 .parallax img:nth-of-type(4),
 .parallax img:nth-of-type(5),
 .parallax img:nth-of-type(6),
-.parallax img:nth-of-type(7) {
+.parallax img:nth-of-type(7),
+.parallax img:nth-of-type(8) {
     display: none;
 }
 
@@ -335,7 +336,8 @@ main>ul:nth-of-type(1) li>a div {
         animation-timeline: scroll();
     }
 
-    .parallax img:nth-of-type(1) {
+    .parallax img:nth-of-type(1),
+    .parallax img:nth-of-type(8) {
         display: none;
     }
 
@@ -353,6 +355,7 @@ main>ul:nth-of-type(1) li>a div {
 
     .parallax img:nth-of-type(2) {
         --parallax-speed: -12;
+        position: absolute;
         z-index: 1;
     }
 
@@ -661,6 +664,18 @@ main>ul:nth-of-type(1) li>a div {
 
     .parallax section {
         padding-left: 13em;
+    }
+
+    .parallax img:nth-of-type(1),
+    .parallax img:nth-of-type(7) {
+        display: none;
+    }
+
+    .parallax img:nth-of-type(8) {
+        height: auto;
+        width: 100%;
+        display: block;
+        overflow: hidden;
     }
 
 
