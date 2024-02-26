@@ -139,6 +139,7 @@ main>img:nth-of-type(3) {
 .timeline-right>section:nth-of-type(2) div {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .timeline-right>section:nth-of-type(2) div h2 {
@@ -168,6 +169,7 @@ main>img:nth-of-type(3) {
 .timeline-right>section:nth-of-type(3) div {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .timeline-right>section:nth-of-type(3) div h2 {
@@ -463,6 +465,10 @@ main>img:nth-of-type(3) {
         gap: 3em;
     }
 
+    .timeline-right>section:nth-of-type(2) div {
+        width: 50%;
+    }
+
     .timeline-right>section:nth-of-type(2) div h2 {
         font-size: clamp(1.6em, 2.4vw, 3.5em);
         color: white;
@@ -485,6 +491,10 @@ main>img:nth-of-type(3) {
         padding: 6em 6em 0 18em;
         display: flex;
         gap: 3em;
+    }
+
+    .timeline-right>section:nth-of-type(3) div {
+        width: 50%;
     }
 
     .timeline-right>section:nth-of-type(3) div h2 {
@@ -672,6 +682,8 @@ main>img:nth-of-type(3) {
 
     /* randomizer */
 
+
+    /* width geven */
     .timeline-right>section:nth-of-type(2) {
         padding: 6em 13em 0 25em;
         gap: 3em;
@@ -679,7 +691,8 @@ main>img:nth-of-type(3) {
 
 
     /* roads and settles */
-
+    
+    /* width geven */
     .timeline-right>section:nth-of-type(3) {
         padding: 6em 13em 0 25em;
     }

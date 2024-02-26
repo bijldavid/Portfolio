@@ -189,6 +189,10 @@ main>ul:nth-of-type(1) li>a div {
     z-index: 110;
 }
 
+.about-me section div {
+    width: 100%;
+}
+
 .about-me section h2 {
     padding: 2.5em 0 0;
 }
@@ -511,10 +515,16 @@ main>ul:nth-of-type(1) li>a div {
 
     /* About */
 
+    /* width geven */
+
     .about-me section {
         padding: 0 6em 0 3em;
         display: flex;
         gap: 1em;
+    }
+
+    .about-me section div {
+        width: 50%;
     }
 
     .about-me section div a {

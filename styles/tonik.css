@@ -147,6 +147,7 @@ main>img:nth-of-type(3) {
 .timeline-right>section:nth-of-type(2) div {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .timeline-right>section:nth-of-type(2) div h2 {
@@ -205,6 +206,7 @@ main>img:nth-of-type(3) {
 .timeline-right>section:nth-of-type(4) div {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .timeline-right>section:nth-of-type(4) div h2 {
@@ -237,6 +239,7 @@ main>img:nth-of-type(3) {
 .timeline-right>section:nth-of-type(5) div {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .timeline-right>section:nth-of-type(5) div h2 {
@@ -497,6 +500,10 @@ main>div:nth-of-type(2) a:after {
         gap: 2em;
     }
 
+    .timeline-right>section:nth-of-type(2) div {
+        width: 50%;
+    }
+
     .timeline-right>section:nth-of-type(2) div h2 {
         font-size: clamp(1.6em, 2.4vw, 3.5em);
         color: white;
@@ -550,6 +557,10 @@ main>div:nth-of-type(2) a:after {
         gap: 2em;
     }
 
+    .timeline-right>section:nth-of-type(4) div {
+        width: 50%;
+    }
+
     .timeline-right>section:nth-of-type(4) div h2 {
         font-size: clamp(1.6em, 2.4vw, 3.5em);
         color: white;
@@ -572,6 +583,10 @@ main>div:nth-of-type(2) a:after {
         padding: 0 6em 0 18em;
         display: flex;
         gap: 2em;
+    }
+
+    .timeline-right>section:nth-of-type(5) div {
+        width: 50%;
     }
 
     .timeline-right>section:nth-of-type(5) div h2 {

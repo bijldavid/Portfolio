@@ -130,3 +130,30 @@ main section>div:nth-of-type(2) label {
     }
 
 }
+
+
+/*************************************************************
+==========================BIGGER=============================
+*************************************************************/
+
+@media (min-width: 1650px) {
+
+    main section>div:nth-of-type(1) {
+        padding: 3em 13em 2em;
+    }
+
+    
+    /* form */
+
+    main section>div:nth-of-type(2) {
+        padding: 0 0 0 13em;
+    }
+    
+    main section>div:nth-of-type(2) img {
+        display: block;
+        width: 50%;
+        object-fit: contain;
+        padding: 0 13em;
+    }
+
+}
