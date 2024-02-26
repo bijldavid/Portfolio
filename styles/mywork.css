@@ -127,23 +127,23 @@ main section nav>ul li a {
 
 @media (min-width: 700px) {
 
-        main section>div:nth-of-type(1) {
-            padding: 1em 6em 2em;
-        }
+    main section>div:nth-of-type(1) {
+        padding: 1em 6em 2em;
+    }
 
-        main section>div:nth-of-type(1) h1 {
-            font-size: clamp(1.6em, 2.4vw, 3.5em);
-        }
+    main section>div:nth-of-type(1) h1 {
+        font-size: clamp(1.6em, 2.4vw, 3.5em);
+    }
 
-        main section>div:nth-of-type(1) p {
-            font-size: clamp(.3em, 1vw, 1.8em);
-            max-width: 60%;
-        }
+    main section>div:nth-of-type(1) p {
+        font-size: clamp(.7em, 1vw, 1.8em);
+        max-width: 60%;
+    }
 
-        main section>ul {
-            padding: 0 6em 3em 6em;
-            gap: 4em;
-        }
+    main section>ul {
+        padding: 0 6em 3em 6em;
+        gap: 4em;
+    }
 
     main section>ul li {
         min-width: 45%;
@@ -155,7 +155,7 @@ main section nav>ul li a {
     main section>ul li div {
         display: none;
     }
-    
+
     main section>ul li:hover::before {
         content: '';
         position: absolute;
@@ -166,7 +166,7 @@ main section nav>ul li a {
         background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
         z-index: 1;
     }
-    
+
     main section>ul li:hover div {
         display: flex;
         position: absolute;
@@ -176,13 +176,13 @@ main section nav>ul li a {
         left: 1.5em;
         gap: .5em;
     }
-    
+
     main section>ul li:hover div img {
         height: 1.5vw;
         width: auto;
         display: block;
     }
-    
+
     main section>ul li:hover div p {
         padding: 0;
         color: white;
@@ -191,22 +191,22 @@ main section nav>ul li a {
     }
 
 
-    
+
 
     main section>ul li h2:nth-of-type(1) {
-    font-size: clamp(.85em, 1.2vw, 2em);
+        font-size: clamp(.85em, 1.2vw, 2em);
     }
 
     main section>ul li h2:nth-of-type(2) {
-    font-size: clamp(.85em, 1.2vw, 2em);
+        font-size: clamp(.85em, 1.2vw, 2em);
     }
 
     main section>ul li p {
-    font-size: clamp(.3em, 1vw, 1.8em);
+        font-size: clamp(.7em, 1vw, 1.8em);
     }
 
     main section>ul li a {
-    font-size: clamp(.3em, 1vw, 1.8em);
+        font-size: clamp(.7em, 1vw, 1.8em);
     }
 
     /* nav */

@@ -1,0 +1,326 @@
+body {
+    background-color: var(--color-background2);
+}
+
+main>section:nth-of-type(1) {
+    padding: 3em 1.5em;
+}
+
+main>section:nth-of-type(1) h1 {
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
+    color: var(--color-htext2);
+    margin-bottom: 1em;
+}
+
+main>section:nth-of-type(1)>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+main>section:nth-of-type(1)>div div h2 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .85em;
+    margin-bottom: .7em;
+}
+
+main>section:nth-of-type(1)>div div p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: var(--color-broodtext);
+}
+
+main>section:nth-of-type(1)>div div:nth-of-type(2) div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+main>section:nth-of-type(1)>div div:nth-of-type(2) div p {
+    line-height: 2em;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .85em;
+    color: var(--color-alttext);
+}
+
+main>section:nth-of-type(1)>div img {
+    width: 100%;
+    display: block;
+    border-radius: 1em;
+}
+
+
+/* SKILLSET */
+
+main>div:nth-of-type(1) {
+    padding: 0 1.5em;
+}
+
+main>div:nth-of-type(1) section {
+    background-color: var(--color-background1);
+    padding: 2.5em 1.5em;
+}
+
+main>div:nth-of-type(1) section h2 {
+    margin-bottom: .7em;
+}
+
+main>div:nth-of-type(1) section div {
+    display: block;
+}
+
+main>div:nth-of-type(1) section div div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+main>div:nth-of-type(1) section div div figure {
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+
+main>div:nth-of-type(1) section div div figure figcaption {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .85em;
+    color: var(--color-htext2);
+}
+
+main>div:nth-of-type(1) section div div figure img {
+    height: 40px;
+    width: auto;
+}
+
+main>div:nth-of-type(1) section div p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: var(--color-broodtext);
+    margin-top: 1.5em;
+}
+
+
+/* KOPJE */
+
+main>section:nth-of-type(2) {
+    padding: 3em 1.5em;
+}
+
+main>section:nth-of-type(2) h2 {
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
+    color: var(--color-htext2);
+    margin-bottom: 1em;
+}
+
+main>section:nth-of-type(2)>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+main>section:nth-of-type(2)>div div h2 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .85em;
+    margin-bottom: .7em;
+}
+
+main>section:nth-of-type(2)>div div p {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75em;
+    color: var(--color-broodtext);
+}
+
+main>section:nth-of-type(2)>div img {
+    width: 100%;
+    display: block;
+    border-radius: 1em;
+}
+
+
+
+/*************************************************************
+==========================desktop=============================
+*************************************************************/
+
+@media (min-width: 700px) {
+    
+    main>section:nth-of-type(1) {
+        padding: 3em 6em;
+    }
+    
+    main>section:nth-of-type(1) h1 {
+        font-size: clamp(1.6em, 2.4vw, 3.5em);
+        margin-bottom: 1em;
+    }
+    
+    main>section:nth-of-type(1)>div {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+    
+    main>section:nth-of-type(1)>div div h2 {
+        font-size: clamp(.85em, 1.2vw, 2em);
+        margin-bottom: .7em;
+    }
+    
+    main>section:nth-of-type(1)>div div p {
+        font-size: clamp(.7em, 1vw, 1.8em);
+    }
+
+    main>section:nth-of-type(1)>div div:nth-of-type(1) {
+        max-width: 33%;
+    }
+    
+    main>section:nth-of-type(1)>div div:nth-of-type(2) div {
+        display: block;
+    }
+
+    main>section:nth-of-type(1)>div div:nth-of-type(2) div p {
+        line-height: 3em;
+        font-size: clamp(.85em, 1.2vw, 2em);
+        width: max-content;
+    }
+    
+    main>section:nth-of-type(1)>div img {
+        width: 33%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+    
+    
+    /* skillset */
+    
+    main>div:nth-of-type(1) {
+        padding: 3em 6em;
+    }
+    
+    main>div:nth-of-type(1) section {
+        background-color: var(--color-background1);
+        padding: 2.5em 6em;
+    }
+    
+    main>div:nth-of-type(1) section h2 {
+        font-size: clamp(1.6em, 2.4vw, 3.5em);
+        margin-bottom: .7em;
+    }
+    
+    main>div:nth-of-type(1) section div {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+    
+    main>div:nth-of-type(1) section div div figure {
+        display: flex;
+        align-items: center;
+        gap: 1.2em;
+    }
+    
+    main>div:nth-of-type(1) section div div figure figcaption {
+        font-family: "century-gothic", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: clamp(.85em, 1.2vw, 2em);
+        color: var(--color-htext2);
+    }
+    
+    main>div:nth-of-type(1) section div div figure img {
+        height: 40px;
+        width: auto;
+    }
+    
+    main>div:nth-of-type(1) section div p {
+        font-family: "century-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(.7em, 1vw, 1.8em);
+        color: var(--color-broodtext);
+        margin: 0;
+    }
+    
+    
+    /* Kopje */
+    
+    main>section:nth-of-type(2) {
+        padding: 3em 6em;
+    }
+    
+    main>section:nth-of-type(2) h2 {
+        font-size: clamp(1.6em, 2.4vw, 3.5em);
+        margin-bottom: 1em;
+    }
+    
+    main>section:nth-of-type(2)>div {
+        flex-direction: row;
+        gap: 3em;
+    }
+    
+    main>section:nth-of-type(2)>div div h2 {
+        font-size: clamp(.85em, 1.2vw, 2em);
+        margin-bottom: .7em;
+    }
+    
+    main>section:nth-of-type(2)>div div p {
+        font-size: clamp(.7em, 1vw, 1.8em);
+        color: var(--color-broodtext);
+    }
+    
+    main>section:nth-of-type(2)>div img {
+        width: 33%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        order: -1;
+    }
+
+}
+
+
+/*************************************************************
+==========================BIGGER=============================
+*************************************************************/
+
+@media (min-width: 1650px) {
+
+    main>section:nth-of-type(1) {
+        padding: 3em 13em;
+    }
+    
+    
+    /* skillset */
+    
+    main>div:nth-of-type(1) {
+        padding: 3em 13em;
+    }
+    
+    
+    /* Kopje */
+    
+    main>section:nth-of-type(2) {
+        padding: 3em 13em;
+    }
+
+}

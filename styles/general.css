@@ -116,6 +116,10 @@ code {
     color: var(--color-codetext);
 }
 
+figure {
+    margin: 0;
+}
+
 .line {
     border: none;
     height: 2px;
@@ -313,10 +317,10 @@ footer nav img {
     font-size: clamp(.85em, 1.2vw, 2em);
 
     p
-    font-size: clamp(.3em, 1vw, 1.8em);
+    font-size: clamp(.7em, 1vw, 1.8em);
 
     a 
-    font-size: clamp(.3em, 1vw, 1.8em); 
+    font-size: clamp(.7em, 1vw, 1.8em);
     */
 
     header {
@@ -351,7 +355,7 @@ footer nav img {
         font-family: "century-gothic", sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: clamp(.3em, 1vw, 1.8em);
+        font-size: clamp(.7em, 1vw, 1.8em);
         border: solid transparent;
         padding: 1em 1.7em;
         border-radius: 2.5em;

@@ -482,14 +482,14 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
     }
 
     main>ul:nth-of-type(1) li p {
-        font-size: clamp(.3em, 1vw, 1.8em);
+        font-size: clamp(.7em, 1vw, 1.8em);
     }
 
     main>ul:nth-of-type(1) li a {
         width: max-content;
         padding: .8em 3.5em .8em 2em;
         margin-bottom: 0;
-        font-size: clamp(.3em, 1vw, 1.8em);
+        font-size: clamp(.7em, 1vw, 1.8em);
         position: relative;
     }
 
@@ -520,7 +520,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
         width: max-content;
         padding: .8em 3.5em .8em 2em;
         margin-bottom: 0;
-        font-size: clamp(.3em, 1vw, 1.8em);
+        font-size: clamp(.7em, 1vw, 1.8em);
         position: relative;
     }
 
@@ -566,7 +566,7 @@ main>ul:nth-of-type(1) li>div:nth-of-type(2) div {
     }
 
     .about-me section p {
-        font-size: clamp(.3em, 1vw, 1.8em);
+        font-size: clamp(.7em, 1vw, 1.8em);
     }
 
 
