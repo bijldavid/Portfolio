@@ -78,7 +78,7 @@ main section>ul li p {
     padding-top: 8px;
 }
 
-main section>ul li a {
+main section>ul li a:nth-of-type(2) {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -97,7 +97,7 @@ main section>ul li img {
 }
 
 
-main section>ul li div {
+main section>ul li a div {
     display: none;
 }
 
@@ -152,11 +152,11 @@ main section nav>ul li a {
 
     /* hover */
 
-    main section>ul li div {
+    main section>ul li a div {
         display: none;
     }
 
-    main section>ul li:hover::before {
+    main section>ul li a:hover::before {
         content: '';
         position: absolute;
         top: 0;
@@ -167,7 +167,7 @@ main section nav>ul li a {
         z-index: 1;
     }
 
-    main section>ul li:hover div {
+    main section>ul li a:hover div {
         display: flex;
         position: absolute;
         align-items: center;
@@ -177,13 +177,13 @@ main section nav>ul li a {
         gap: .5em;
     }
 
-    main section>ul li:hover div img {
+    main section>ul li a:hover div img {
         height: 1.5vw;
         width: auto;
         display: block;
     }
 
-    main section>ul li:hover div p {
+    main section>ul li a:hover div p {
         padding: 0;
         color: white;
         font-weight: 700;
