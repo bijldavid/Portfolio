@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="david bijl">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio homepage</title>
+
+    <link href="./styles/general.css" rel="stylesheet">
+    <link href="./styles/contact.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/tpk7blo.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html">
+                <p>DAVID BIJL</p>
+            </a>
+            <div class="hamburger">
+                <a id="hamburger-toggle" class="hamburger-toggle">
+                    <span class="hamburger-toggle-bar hamburger-toggle-bar--top"></span>
+                    <span class="hamburger-toggle-bar hamburger-toggle-bar--middle"></span>
+                    <span class="hamburger-toggle-bar hamburger-toggle-bar--bottom"></span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mywork.html">My work</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div>
+                    <h1>GET IN CONTACT WITH ME</h1>
+                    <p>I am passionate about crafting engaging user experiences and bringing ideas to life through code.
+                        Below, you'll find a glimpse into three of my recent projects:</p>
+                </div>
+
+                <div>
+                    <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                    <img src="#">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 David Bijl</p>
+        <nav>
+            <a href="#"><img src="images/general/linkedinicon.png"></a></li>
+            <a href="#"><img src="images/general/gitgubicon.png"></a></li>
+        </nav>
+    </footer>
+    <script defer src="index.js"></script>
+</body>
