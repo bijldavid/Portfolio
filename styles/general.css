@@ -127,6 +127,10 @@ figure {
     margin: .5em 0;
 }
 
+.margin {
+    margin: 0 .35em;
+}
+
 
 /* utility classes */
 

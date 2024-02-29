@@ -76,7 +76,11 @@ main>ul:nth-of-type(1) li {
     padding: 0 1.5em;
 }
 
-main>ul:nth-of-type(1) li h3:nth-of-type(1) {
+main>ul:nth-of-type(1) li div {
+    width: 100%;
+}
+
+main>ul:nth-of-type(1) li div h3:nth-of-type(1) {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -85,7 +89,7 @@ main>ul:nth-of-type(1) li h3:nth-of-type(1) {
     padding-top: 20px;
 }
 
-main>ul:nth-of-type(1) li h3:nth-of-type(2) {
+main>ul:nth-of-type(1) li div h3:nth-of-type(2) {
     font-family: "century-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -94,7 +98,7 @@ main>ul:nth-of-type(1) li h3:nth-of-type(2) {
     padding-top: 8px;
 }
 
-main>ul:nth-of-type(1) li p {
+main>ul:nth-of-type(1) li div p {
     font-size: .75em;
     color: var(--color-broodtext);
     padding-top: 8px;
@@ -218,7 +222,6 @@ main>ul:nth-of-type(1) li>a div {
     font-weight: 700;
     font-style: normal;
     font-size: .85em;
-    border: solid;
     padding: .7em 0;
     display: block;
     text-align: center;
@@ -289,7 +292,7 @@ main>ul:nth-of-type(1) li>a div {
     justify-content: center;
     align-items: center;
 
-    border: solid var(--color-htext2) 2px;
+    border: solid var(--color-htext2);
     width: 140px;
     height: 40px;
     gap: 10px;
@@ -480,16 +483,20 @@ main>ul:nth-of-type(1) li>a div {
         object-fit: contain;
     }
 
-    main>ul:nth-of-type(1) li h3:nth-of-type(1) {
+    main>ul:nth-of-type(1) li div {
+        width: 65%;
+    }
+
+    main>ul:nth-of-type(1) li div h3:nth-of-type(1) {
         font-size: clamp(.85em, 1.2vw, 2em);
         padding: 0;
     }
 
-    main>ul:nth-of-type(1) li h3:nth-of-type(2) {
+    main>ul:nth-of-type(1) li div h3:nth-of-type(2) {
         font-size: clamp(.85em, 1.2vw, 2em);
     }
 
-    main>ul:nth-of-type(1) li p {
+    main>ul:nth-of-type(1) li div p {
         font-size: clamp(.7em, 1vw, 1.8em);
     }
 
