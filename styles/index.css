@@ -644,7 +644,7 @@ main>ul:nth-of-type(1) li>a div {
 
     .contact-buttons a {
         font-size: clamp(.8em, 1vw, 1.8em);
-        width: 170px;
+        width: 200px;
         height: 45px;
     }
 
