@@ -648,23 +648,23 @@ main>div:nth-of-type(2) a:after {
 
     .timeline-left {
         height: 91.5%;
-        margin: 17.8em 0 0 13em;
+        margin: 24em 0 0 13em;
     }
 
     .research {
         /* height: 91.5em; */
-        height: 48.5%;
+        height: 47%;
     }
 
 
     .me-fi {
         /* height: 47.5em; */
-        height: 39.5%;
+        height: 39.3%;
     }
 
     .hi-fi {
         /* height: 48em; */
-        height: 12%;
+        height: 13.7%;
     }
 
 
@@ -681,7 +681,7 @@ main>div:nth-of-type(2) a:after {
     main>img:nth-of-type(3) {
         width: 100%;
         height: auto;
-        margin-top: -90px;
+        margin-top: -110px;
         display: block;
     }
 
@@ -697,7 +697,7 @@ main>div:nth-of-type(2) a:after {
     /* structure */
 
     .con>section:nth-of-type(1) {
-        padding: 18em 13em 0 25em;
+        padding: 22em 13em 0 25em;
         gap: 3em;
     }
 

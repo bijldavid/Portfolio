@@ -614,23 +614,23 @@ main>img:nth-of-type(3) {
 
     .timeline-left {
         height: 73.5%;
-        margin: 17.8em 0 0 13em;
+        margin: 25.7em 0 0 13em;
     }
 
     .research {
         /* height: 91.5em; */
-        height: 14.4%;
+        height: 11.8%;
     }
 
 
     .me-fi {
         /* height: 47.5em; */
-        height: 80.7%;
+        height: 81%;
     }
 
     .hi-fi {
         /* height: 48em; */
-        height: 4.9%;
+        height: 7.2%;
     }
 
 
@@ -647,7 +647,7 @@ main>img:nth-of-type(3) {
     main>img:nth-of-type(3) {
         width: 100%;
         height: auto;
-        margin-top: -110px;
+        margin-top: -90px;
         display: block;
     }
 
@@ -663,7 +663,7 @@ main>img:nth-of-type(3) {
     /* the game */
 
     .con>section:nth-of-type(1) {
-        padding: 18em 13em 0 25em;
+        padding: 22em 13em 0 25em;
         gap: 3em;
     }
 
