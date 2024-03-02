@@ -108,7 +108,7 @@ main section nav>ul {
     gap: 1em;
     list-style-type: none;
     justify-content: center;
-    padding-top: 2em;
+    padding: 2em 0;
 }
 
 main section nav>ul li a {
