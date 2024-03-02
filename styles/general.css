@@ -73,6 +73,7 @@ font-size: .85em;
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--color-background2);
 }
 
 h1,

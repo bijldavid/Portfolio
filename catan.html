@@ -49,19 +49,19 @@
                             <div>
                                 <section>
                                     <h3>JAVASCRIPT</h3>
-                                    <p>Javascript is one of the most written code languages out there and plays a big
-                                        part in web design as we know it today. In this case study I bring you along on
-                                        my first ever javascript project. This project is all about experimenting with
-                                        javascript in conjunction with HTML and CSS. It will highlight my understanding
-                                        of the various datatypes, variables, functions, loops, if-statements and more!
+                                    <p>JavaScript is one of the most commonly used programming languages and plays a
+                                        significant role in modern web design. In this case study, I invite you to join
+                                        me on my first-ever JavaScript project. This project focuses on experimenting
+                                        with JavaScript alongside HTML and CSS. It will showcase my understanding of
+                                        various data types, variables, functions, loops, if-statements, and more!
                                     </p>
                                 </section>
                                 <section>
                                     <h3>Briefing</h3>
-                                    <p>The task for this project was to create or recreate an existing game, utilizing
-                                        only JavaScript, HTML, and CSS—simple enough. With my limited prior experience
-                                        in JavaScript, I ambitiously selected the board game, Catan. In hindsight, this
-                                        was never achievable for a beginner but was a fun and insightful project
+                                    <p>The task for this project was to create or recreate an existing game using only
+                                        JavaScript, HTML, and CSS—simple enough. With my limited prior experience in
+                                        JavaScript, I ambitiously chose the board game, Catan. In hindsight, this was
+                                        never achievable for a beginner, but it was a fun and insightful project
                                         nonetheless.
                                     </p>
                                 </section>
@@ -74,11 +74,11 @@
                         <div>
                             <h2>THE GAME</h2>
                             <p>“Catan” is a popular strategy board game where players compete to earn victory points,
-                                first person to reach 10 points wins. In Catan, players gather resources: wood, brick,
-                                grain, ore, and sheep to build roads, settlements and cities. Settlements and cities
-                                earn them victory points. There's some more nuance to it but this is essentially what it
-                                boils down to. The tricky part of this project was translating the different items and
-                                rulesets into an interactive interface.</p>
+                                with the first person to reach 10 points declared the winner. In Catan, players gather
+                                resources such as wood, brick, grain, ore, and sheep to build roads, settlements, and
+                                cities. Settlements and cities earn them victory points. While there is more nuance to
+                                the game, this is essentially its core concept. The tricky part of this project was
+                                translating the various items and rulesets into an interactive interface.</p>
                         </div>
                         <div>
                             <img src="images/catan/catanmockup.png">
@@ -90,15 +90,13 @@
                     <h2>THE BOARD</h2>
                     <div>
                         <p>
-                            The board in Catan consists of 19 hexagonal tiles. Every tile has an assigned resource.
-                            Every
-                            corner of every tile is a potential settlement spot. Settlements are connected by roads.
-                            This means that every corner of every tile needed to be clickable.
+                            The board in Catan consists of 19 hexagonal tiles, each assigned a resource. Every corner of
+                            every tile serves as a potential settlement spot, connected by roads. Consequently, every
+                            corner of every tile needed to be clickable.
                         </p>
                         <p>
-                            And on top of that, every space between every settlement needed a clickable road. Which
-                            resulted in …-grid. Put the roads, settlements and tiles together and you end up with this
-                            board!
+                            In addition, every space between settlements required a clickable road, resulting in the
+                            road-grid. Combine the roads, settlements, and tiles, and you'll have the complete board!
                         </p>
                     </div>
                     <div>
@@ -111,9 +109,9 @@
                 <section>
                     <div>
                         <h2>RANDOMIZER</h2>
-                        <p>Truth be told, the randomiser wasn't a necessity for the game; rather, it served as a fun
-                            challenge to explore JavaScript :) That said, given that every game of Catan begins with a
-                            randomly generated board, there was some value in implementing it.
+                        <p>Truth be told, the randomizer wasn't a necessity for the game; instead, it served as a fun
+                            challenge to explore JavaScript. That being said, considering that every game of Catan
+                            begins with a randomly generated board, there was some value in implementing it.
                         </p>
 
                         <p>The randomization process involved creating a function that utilized <code>Math.random</code>
@@ -132,13 +130,10 @@
                     <div>
                         <h2>ROADS AND SETTLES</h2>
                         <p>Creating the road and settlement grid was just the beginning – they had to be interactive
-                            too! During
-                            set up in a game of Catan, players first choose a settlement spot and then place a road
-                            adjacent to
-                            their settlement pointing either up left or right. This meant the roads had to be invisible
-                            until a
-                            player built their settlement. Once settled, only the three adjacent roads should appear
-                            into view.
+                            too! In a game of Catan, players first choose a settlement spot and then place a road
+                            adjacent to it, pointing either upwards, leftwards, or rightwards. This meant the roads had
+                            to remain invisible until a player built their settlement. Once settled, only the three
+                            adjacent roads should become visible.
                         </p>
                     </div>
                     <video muted="muted" autoplay="autoplay" loop playsinline>
@@ -151,18 +146,15 @@
                     <h2>PROBLEM SOLVING</h2>
                     <div>
                         <p>
-                            Working on this project made me realise just how much work and effort goes into creating
-                            seemingly 'simple' games like Catan. It took a lot of problem solving and back tracking to
-                            making something even remotely functional.
+                            Working on this project made me realize just how much work and effort goes into creating
+                            seemingly 'simple' games like Catan. It required a lot of problem-solving and backtracking
+                            to create something even remotely functional.
                         </p>
                         <p>
-                            For example, once something is invisible, you don't want it clickable anymore. And when you
-                            click something, it should stay active. Randomising the board should remove all active
-                            settles
-                            and roads. The list goes on… In the end, I only really got around to creating the first few
-                            steps
-                            of
-                            the game.
+                            For example, once something is made invisible, it shouldn't be clickable anymore. Also, when
+                            you click something, it should remain active. Randomizing the board should reset all active
+                            settlements and roads. The list goes on... In the end, I only managed to create the initial
+                            steps of the game.
                         </p>
                     </div>
                     <video muted="muted" autoplay="autoplay" loop playsinline>
@@ -177,14 +169,13 @@
                     <div>
                         <h2>FINAL PRODUCT</h2>
                         <p>
-                            Like I mentioned above, this was about the extent of what I was capable of creating within
-                            the
-                            span of this project, and it's barely scratching the surface of what the full game is like.
+                            As mentioned above, this represents the extent of what I was capable of creating within the
+                            span of this project, barely scratching the surface of the full game.
                         </p>
                         <p>
-                            I learned that javascript has a pretty steep learning curve. Though this project isn't much
-                            of a complete game, I'm still very proud of what I've managed to produce. I learned a lot of
-                            valuable techniques and therefore feel pride showing it off here!
+                            I discovered that JavaScript has a steep learning curve. While this project may not
+                            constitute a complete game, I am still very proud of what I have managed to produce. I
+                            learned a lot of valuable techniques and am therefore proud to showcase them here!
                         </p>
                         <a href="https://bijldavid.github.io/Catan/" target="_blank">View full project</a>
                     </div>

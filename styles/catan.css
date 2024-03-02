@@ -308,7 +308,7 @@ main>img:nth-of-type(3) {
                 white 5px,
                 transparent 3px,
                 transparent 12px) 1;
-        margin: 17.8em 0 0 6em;
+        margin: 17.8vw 0 0 6em;
         display: block;
     }
 
@@ -401,7 +401,7 @@ main>img:nth-of-type(3) {
     .con>section:nth-of-type(1) {
         display: flex;
         flex-direction: row;
-        padding: 18em 6em 0 18em;
+        padding: 14vw 6em 0 18em;
         gap: 2em;
     }
 
@@ -614,7 +614,7 @@ main>img:nth-of-type(3) {
 
     .timeline-left {
         height: 73.5%;
-        margin: 25.7em 0 0 13em;
+        margin: 21vw 0 0 13em;
     }
 
     .research {
@@ -647,7 +647,7 @@ main>img:nth-of-type(3) {
     main>img:nth-of-type(3) {
         width: 100%;
         height: auto;
-        margin-top: -90px;
+        margin-top: -110px;
         display: block;
     }
 
@@ -663,7 +663,7 @@ main>img:nth-of-type(3) {
     /* the game */
 
     .con>section:nth-of-type(1) {
-        padding: 22em 13em 0 25em;
+        padding: 17vw 13em 0 25em;
         gap: 3em;
     }
 
