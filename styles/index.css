@@ -441,7 +441,7 @@ main>ul:nth-of-type(1) li>a div {
         display: none;
     }
     
-    main>ul:nth-of-type(1) li>a:hover::before {
+    main>ul:nth-of-type(1) li>a::before {
         content: '';
         position: absolute;
         top: 0;
@@ -450,9 +450,15 @@ main>ul:nth-of-type(1) li>a div {
         height: 50%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
         z-index: 1;
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+
+    main>ul:nth-of-type(1) li>a:hover::before {
+        opacity: 1;
     }
     
-    main>ul:nth-of-type(1) li>a:hover div {
+    main>ul:nth-of-type(1) li>a div {
         display: flex;
         position: absolute;
         align-items: center;
@@ -460,15 +466,21 @@ main>ul:nth-of-type(1) li>a div {
         top: 1.5em;
         left: 1.5em;
         gap: .5em;
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+
+    main>ul:nth-of-type(1) li>a:hover div {
+        opacity: 1;
     }
     
-    main>ul:nth-of-type(1) li>a:hover div img {
+    main>ul:nth-of-type(1) li>a div img {
         height: 1.5vw;
         width: auto;
         display: block;
     }
     
-    main>ul:nth-of-type(1) li>a:hover div p {
+    main>ul:nth-of-type(1) li>a div p {
         padding: 0;
         color: white;
         font-weight: 700;
